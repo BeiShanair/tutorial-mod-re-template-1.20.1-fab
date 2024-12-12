@@ -1,5 +1,6 @@
 package com.besson.tutorial;
 
+import com.besson.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +21,7 @@ public class TutorialModRe implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		// 在主类的onInitialize方法中调用我们的初始化方法
+		ModItems.registerModItems();
 	}
 }
