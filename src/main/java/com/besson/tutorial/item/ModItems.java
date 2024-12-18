@@ -1,8 +1,11 @@
 package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialModRe;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -62,6 +65,14 @@ public class ModItems {
          */
         return Registry.register(Registries.ITEM, new Identifier(TutorialModRe.MOD_ID, id), item);
     }
+    // 使用Fabric的API，将物品加入原版的物品栏（当然只限于原版物品栏，如果要新的物品栏得创建）
+    private static void addItemToItemGroup(FabricItemGroupEntries entries) {
+        entries.add(ICE_ETHER);
+    }
+    private static void addItemToItemGroup2(FabricItemGroupEntries entries) {
+        entries.add(CARDBOARD);
+    }
+
 
     // 对了，不要忘记用于初始化的方法
     public static void registerModItems() {
@@ -69,5 +80,8 @@ public class ModItems {
            因为在Java中，调用该方法的时候，所在类的所有静态代码块和静态变量都会被初始化
            我们上面写的物品是static final修饰的，所以在这个方法被调用的时候，物品也就被注册了
          */
+        // 利用ItemGroupEvents的modifyEntriesEvent方法，将物品加入原版对应的物品栏，并调用上面的方法
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemToItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToItemGroup2);
     }
 }
