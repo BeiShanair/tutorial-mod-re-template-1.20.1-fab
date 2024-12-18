@@ -16,6 +16,8 @@ public class ModItems {
     // 注册我们的第一个物品
     public static final Item ICE_ETHER = registerItem("ice_ether", new Item(new Item.Settings()));
 
+    public static final Item CARDBOARD = registerItems("materials/cardboard", new Item(new Item.Settings()));
+
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
        以DIAMOND为例，我们可以看到其注册方法是这样的：（一共是三层，DIAMOND注册调用的是第一个方法）
