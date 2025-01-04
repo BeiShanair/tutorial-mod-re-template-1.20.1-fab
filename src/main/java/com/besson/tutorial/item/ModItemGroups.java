@@ -1,6 +1,7 @@
 package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialModRe;
+import com.besson.tutorial.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -34,6 +35,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CARDBOARD);
                         entries.add(Items.DIAMOND);
+                        entries.add(ModBlocks.ICE_ETHER_BLOCK);
+                        entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
                     }).build());
 
     // 初始化注册方法

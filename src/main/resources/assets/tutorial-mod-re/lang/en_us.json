@@ -2,5 +2,7 @@
   "item.tutorial-mod-re.ice_ether": "Ice Ether",
   "item.tutorial-mod-re.materials.cardboard": "Cardboard",
   "itemGroup.tutorial_group": "Tutorial Group",
-  "itemGroup.tutorial_group2": "Tutorial Group 2"
+  "itemGroup.tutorial_group2": "Tutorial Group 2",
+  "block.tutorial-mod-re.ice_ether_block": "Ice Ether Block",
+  "block.tutorial-mod-re.raw_ice_ether_block": "Raw Ice Ether Block"
 }
