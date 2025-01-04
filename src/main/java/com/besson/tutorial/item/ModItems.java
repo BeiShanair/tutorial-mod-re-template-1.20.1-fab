@@ -19,6 +19,8 @@ public class ModItems {
     // 注册我们的第一个物品
     public static final Item ICE_ETHER = registerItem("ice_ether", new Item(new Item.Settings()));
 
+    public static final Item RAW_ICE_ETHER = registerItems("raw_ice_ether", new Item(new Item.Settings()));
+
     public static final Item CARDBOARD = registerItems("materials/cardboard", new Item(new Item.Settings()));
 
     /*

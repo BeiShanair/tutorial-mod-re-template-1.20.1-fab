@@ -19,7 +19,11 @@ public class ModBlocks {
      */
     public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
 
-    public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
+    public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).requiresTool()));
+
+    public static final Block ICE_ETHER_ORE = register("ice_ether_ore", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).requiresTool()));
+
+
 
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层

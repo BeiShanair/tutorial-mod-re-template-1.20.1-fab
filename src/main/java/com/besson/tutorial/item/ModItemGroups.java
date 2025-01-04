@@ -37,6 +37,8 @@ public class ModItemGroups {
                         entries.add(Items.DIAMOND);
                         entries.add(ModBlocks.ICE_ETHER_BLOCK);
                         entries.add(ModBlocks.RAW_ICE_ETHER_BLOCK);
+                        entries.add(ModBlocks.ICE_ETHER_ORE);
+                        entries.add(ModItems.RAW_ICE_ETHER);
                     }).build());
 
     // 初始化注册方法
