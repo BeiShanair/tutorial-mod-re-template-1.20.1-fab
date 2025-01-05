@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ice_ether",
+  "ingredient": {
+    "item": "tutorial-mod-re:raw_ice_ether"
+  },
+  "result": "tutorial-mod-re:ice_ether"
+}

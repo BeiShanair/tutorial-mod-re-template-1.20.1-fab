@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ice_ether",
+  "ingredients": [
+    {
+      "item": "tutorial-mod-re:raw_ice_ether"
+    },
+    {
+      "item": "minecraft:stone"
+    }
+  ],
+  "result": {
+    "item": "tutorial-mod-re:ice_ether_ore"
+  }
+}
