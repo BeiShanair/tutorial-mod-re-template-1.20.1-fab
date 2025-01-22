@@ -42,6 +42,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CORN);
                         entries.add(ModItems.STRAWBERRY);
                         entries.add(ModItems.CHEESE);
+                        entries.add(ModItems.ANTHRACITE);
                     }).build());
 
     // 初始化注册方法

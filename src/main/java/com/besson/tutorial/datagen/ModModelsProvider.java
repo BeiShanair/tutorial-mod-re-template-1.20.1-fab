@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 
 public class ModModelsProvider extends FabricModelProvider {
@@ -35,5 +34,6 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CORN, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRAWBERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANTHRACITE, Models.GENERATED);
     }
 }

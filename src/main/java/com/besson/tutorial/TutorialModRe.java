@@ -5,6 +5,7 @@ import com.besson.tutorial.item.ModItemGroups;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,5 +28,8 @@ public class TutorialModRe implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModBlocks.registerModBlocks();
+
+		// 燃料最快捷的注册方法是用Fabric的API实现，参数分别为燃料和燃烧时间（tick）
+//		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 600);
 	}
 }
