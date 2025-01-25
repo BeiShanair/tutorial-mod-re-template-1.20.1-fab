@@ -3,6 +3,7 @@ package com.besson.tutorial.datagen;
 import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.ModItems;
+import com.besson.tutorial.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
@@ -53,10 +54,11 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ICE_ETHER),conditionsFromItem(ModItems.ICE_ETHER))
                 .offerTo(exporter,new Identifier(TutorialModRe.MOD_ID, getRecipeName(ModBlocks.ICE_ETHER_ORE)));
 
+        // 有了Tag以后，我们就可以改写我们的配方
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SUGAR,3)
                 .pattern("###")
-                .input('#', Items.BEETROOT)
-                .criterion(hasItem(Items.BEETROOT),conditionsFromItem(Items.BEETROOT))
+                .input('#', ModItemTags.SUGAR_INGREDIENTS)
+                .criterion(hasItem(Items.BEETROOT),conditionsFromTag(ModItemTags.SUGAR_INGREDIENTS))
                 .offerTo(exporter,new Identifier(TutorialModRe.MOD_ID,"beetroot_to_sugar"));
 
         // 对于食物类的加工配方，如烟熏炉和营火配方，可以直接使用RecipeProvider.offerFoodCookingRecipe来写

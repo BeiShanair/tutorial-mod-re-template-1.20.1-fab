@@ -1,8 +1,11 @@
 package com.besson.tutorial.datagen;
 
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.item.ModItems;
+import com.besson.tutorial.tag.ModItemTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -17,6 +20,9 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        // 由于我们暂时没有涉及到ItemTags的内容，这里就先空着
+        getOrCreateTagBuilder(ModItemTags.SUGAR_INGREDIENTS)
+                .add(ModItems.STRAWBERRY)
+                .add(ModItems.CHEESE)
+                .add(Items.BEETROOT);
     }
 }

@@ -1,3 +1,4 @@
-// 1.20.1	2025-01-22T13:25:42.5681602	Tutorial Mod Re/Tags for minecraft:block
+// 1.20.1	2025-01-25T15:03:18.5757759	Tutorial Mod Re/Tags for minecraft:block
 2a7b84ff7aa220aac6c6d2d226add199fcd00b68 data\minecraft\tags\blocks\mineable\pickaxe.json
+8a2ddd2f26fe54e635c57076344d5542ca82884e data\tutorial-mod-re\tags\blocks\ether_block.json
 74eb4d7009fe773bcbc2304f8104e47067f16da3 data\minecraft\tags\blocks\needs_iron_tool.json
