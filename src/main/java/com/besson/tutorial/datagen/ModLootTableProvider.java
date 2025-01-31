@@ -4,6 +4,7 @@ import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
@@ -31,6 +32,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.ICE_ETHER_ORE, likeCopperOreDrops(ModBlocks.ICE_ETHER_ORE, ModItems.RAW_ICE_ETHER, 1.0F, 3.0F));
 
+        /* 设置战利品列表
+           其中台阶和门还要写单独方法
+           因为台阶在变成完整方块时，需要掉落两个
+           而门具有半门特性，也需要单独设置
+         */
+        addDrop(ModBlocks.ICE_ETHER_STAIRS);
+        addDrop(ModBlocks.ICE_ETHER_SLAB, slabDrops(ModBlocks.ICE_ETHER_SLAB));
+        addDrop(ModBlocks.ICE_ETHER_BUTTON);
+        addDrop(ModBlocks.ICE_ETHER_PRESSURE_PLATE);
+        addDrop(ModBlocks.ICE_ETHER_FENCE);
+        addDrop(ModBlocks.ICE_ETHER_FENCE_GATE);
+        addDrop(ModBlocks.ICE_ETHER_DOOR, doorDrops(ModBlocks.ICE_ETHER_DOOR));
+        addDrop(ModBlocks.ICE_ETHER_WALL);
+        addDrop(ModBlocks.ICE_ETHER_TRAPDOOR);
     }
 
     /* 我们可以到原版的BlockLootTableGenerator中查看方块的战利品列表生成方法

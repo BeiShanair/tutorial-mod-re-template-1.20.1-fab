@@ -1,8 +1,7 @@
 package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialModRe;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -17,11 +16,39 @@ public class ModBlocks {
     /* 这里我们注册方块
        对于方块的设置，详见视频教程以及图文教程
      */
-    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
+    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
 
     public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).requiresTool()));
 
     public static final Block ICE_ETHER_ORE = register("ice_ether_ore", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).requiresTool()));
+
+    // 楼梯，接受参数为基础方块状态和方块设置
+    public static final Block ICE_ETHER_STAIRS = register("ice_ether_stairs",
+            new StairsBlock(ICE_ETHER_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)));
+    // 台阶，接受参数为方块设置
+    public static final Block ICE_ETHER_SLAB = register("ice_ether_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)));
+    // 按钮，接受参数为方块设置，方块类型，按下至弹起的时间（tick），是否为木制（即是否能被箭、三叉戟激活）
+    public static final Block ICE_ETHER_BUTTON = register("ice_ether_button",
+            new ButtonBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK), BlockSetType.STONE, 100, false));
+    // 压力板，接受参数为激活条件，方块设置，方块类型
+    public static final Block ICE_ETHER_PRESSURE_PLATE = register("ice_ether_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, AbstractBlock.Settings.copy(ICE_ETHER_BLOCK), BlockSetType.STONE));
+    // 栅栏，接受参数为方块设置
+    public static final Block ICE_ETHER_FENCE = register("ice_ether_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)));
+    // 栅栏门，接受参数为方块设置，木头类型（因为原版的栅栏门都是木制的，而栅栏中只有下界砖栅栏不是木制的）
+    public static final Block ICE_ETHER_FENCE_GATE = register("ice_ether_gate",
+            new FenceGateBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK), WoodType.OAK));
+    // 墙，接受参数为方块设置
+    public static final Block ICE_ETHER_WALL = register("ice_ether_wall",
+            new WallBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK)));
+    // 门，接受参数为方块设置，方块类型（其中如果设置为铁（IRON），则必须用红石信号才能打开）
+    public static final Block ICE_ETHER_DOOR = register("ice_ether_door",
+            new DoorBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK), BlockSetType.IRON));
+    // 活板门，接受参数为方块设置，方块类型（同上）
+    public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor",
+            new TrapdoorBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque(), BlockSetType.STONE));
 
 
 

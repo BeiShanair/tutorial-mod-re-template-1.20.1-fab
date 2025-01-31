@@ -1,5 +1,6 @@
 package com.besson.tutorial.datagen;
 
+import com.besson.tutorial.block.ModBlockFamilies;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -7,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.family.BlockFamily;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -18,9 +20,19 @@ public class ModModelsProvider extends FabricModelProvider {
         // 这个方法下写我们的方块，它会将我们的方块模型文件、方块状态文件，以及方块对应的方块物品模型文件一起生成
 
         // 我们之前写的方块是cube all的，那么这里我们就可以采用registerSimpleCubeAll方法来生成我们的方块模型文件
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_BLOCK);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_ICE_ETHER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_ORE);
+
+        /* 参考原版代码编写同类型方块的数据生成
+           其中的registerCubeAllModelTexturePool方法获取的是基础方块的材质
+           并将其作为同家族中所有方块的材质
+         */
+        ModBlockFamilies.getFamilies()
+                .filter(BlockFamily::shouldGenerateModels).forEach(
+                        blockFamily ->
+                                blockStateModelGenerator.registerCubeAllModelTexturePool(blockFamily.getBaseBlock())
+                                        .family(blockFamily));
     }
 
     @Override

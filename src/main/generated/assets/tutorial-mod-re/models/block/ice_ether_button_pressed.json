@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "tutorial-mod-re:block/ice_ether_block"
+  }
+}

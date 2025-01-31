@@ -34,5 +34,13 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.IRON_ORES)
                 .forceAddTag(BlockTags.LAPIS_ORES)
                 .forceAddTag(BlockTags.REDSTONE_ORES);
+
+        // 我们写的栅栏和墙要连接，都需要加入到tag中，否则就是一根根独立的柱子
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.ICE_ETHER_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ICE_ETHER_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ICE_ETHER_WALL);
     }
 }
