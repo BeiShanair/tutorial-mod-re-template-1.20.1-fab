@@ -3,9 +3,7 @@ package com.besson.tutorial.item;
 import com.besson.tutorial.TutorialModRe;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -31,6 +29,20 @@ public class ModItems {
 
     // 注册燃料
     public static final Item ANTHRACITE = registerItems("anthracite", new Item(new Item.Settings()));
+
+    // 先注册一个工具的材料
+    public static final Item FIRE_ETHER = registerItems("fire_ether", new Item(new Item.Settings()));
+    // 注册工具，其中的两个数值为额外攻击伤害加成和攻击速度加成，可参考原版
+    public static final Item FIRE_ETHER_SWORD = registerItems("fire_ether_sword", new SwordItem(ModToolMaterials.FIRE_ETHER,
+            3, -2.0f, new Item.Settings().fireproof()));
+    public static final Item FIRE_ETHER_SHOVEL = registerItems("fire_ether_shovel", new ShovelItem(ModToolMaterials.FIRE_ETHER,
+            1.5f, -3.0f, new Item.Settings().fireproof()));
+    public static final Item FIRE_ETHER_PICKAXE = registerItems("fire_ether_pickaxe", new PickaxeItem(ModToolMaterials.FIRE_ETHER,
+            2, -2.8f, new Item.Settings().fireproof()));
+    public static final Item FIRE_ETHER_AXE = registerItems("fire_ether_axe", new AxeItem(ModToolMaterials.FIRE_ETHER,
+            6.0f, -3.2f, new Item.Settings().fireproof()));
+    public static final Item FIRE_ETHER_HOE = registerItems("fire_ether_hoe", new HoeItem(ModToolMaterials.FIRE_ETHER,
+            -4, 0.0f, new Item.Settings().fireproof()));
 
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
