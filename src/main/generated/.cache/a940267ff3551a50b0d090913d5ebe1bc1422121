@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-05T10:42:09.0897031	Tutorial Mod Re/Model Definitions
+// 1.20.1	2025-02-05T11:10:42.4291378	Tutorial Mod Re/Model Definitions
 434fe9434aee99408062680f3a88be16cfaddd7c assets\tutorial-mod-re\models\item\ice_ether_stairs.json
 ea7ee77b8ca7c99911eb46e527dd57f9b335e60b assets\tutorial-mod-re\models\block\ice_ether_fence_post.json
 9669d23dbf532cc85c61ea25df4bca14c623a117 assets\tutorial-mod-re\models\block\raw_ice_ether_block.json
@@ -8,19 +8,19 @@ f6b5142db52fe9175665f41b1fadb3f2fa629f41 assets\tutorial-mod-re\models\item\fire
 2f5141bd2adb7c7db21d4ddbf0aba305b3b5e817 assets\tutorial-mod-re\models\item\materials\cardboard.json
 bef584a3b159fb4cf138bf36c9b3fc311557573c assets\tutorial-mod-re\models\block\ice_ether_block.json
 3d1c248fa5e6ff370b76050052d3cb3a56803b5a assets\tutorial-mod-re\blockstates\ice_ether_door.json
-641c3db5697fafc07ace86755efe7eb1799a5ec1 assets\tutorial-mod-re\blockstates\ice_ether_block.json
 ca30934834f192c9385866a3b822aa689831b967 assets\tutorial-mod-re\blockstates\ice_ether_trapdoor.json
+641c3db5697fafc07ace86755efe7eb1799a5ec1 assets\tutorial-mod-re\blockstates\ice_ether_block.json
 ee6f41a1b50eba3f43439b2764ec988b311820dd assets\tutorial-mod-re\blockstates\ice_ether_pressure_plate.json
 3e01a091aa1f9715ad07eeff84bedcce18bb6448 assets\tutorial-mod-re\models\block\ice_ether_wall_inventory.json
-5db0d41487d41d3358e9e9615d450768651864c0 assets\tutorial-mod-re\models\block\ice_ether_stairs_inner.json
 7544daac99a31e06ecaafdb79c0d604bc6db1a62 assets\tutorial-mod-re\models\block\ice_ether_button_pressed.json
+5db0d41487d41d3358e9e9615d450768651864c0 assets\tutorial-mod-re\models\block\ice_ether_stairs_inner.json
 17870fea98327a45aeea48a3a8b571b15711dc3f assets\tutorial-mod-re\models\block\ice_ether_slab_top.json
 188b3b2aacadb915714e1a536102a5b85a5d9e69 assets\tutorial-mod-re\models\block\ice_ether_ore.json
 f87a428e73ff3d89a3e62b5eee9743b19c1cf205 assets\tutorial-mod-re\blockstates\ice_ether_ore.json
 2a9a804f461e2f18d495f8356859c75f86c7e033 assets\tutorial-mod-re\models\item\fire_ether.json
-073ff4a3f78cb22c6933cfab0f6339be6929d1f9 assets\tutorial-mod-re\models\block\ice_ether_wall_side.json
 b144658f86eb05fe4435bc1e0101f67a0a9e5b7b assets\tutorial-mod-re\models\block\ice_ether_gate.json
 6eadc9c909f95b644dfebb4ded50259463004c48 assets\tutorial-mod-re\models\item\fire_ether_pickaxe.json
+073ff4a3f78cb22c6933cfab0f6339be6929d1f9 assets\tutorial-mod-re\models\block\ice_ether_wall_side.json
 683d7c5d55d0d30fb711d0ad77188cf3e02220a8 assets\tutorial-mod-re\models\block\ice_ether_door_top_right_open.json
 8d27bfd1679898fa9976ee0e2016394badf66f09 assets\tutorial-mod-re\models\item\ice_ether_slab.json
 d48ebc6dc902e199ef8f98d1e09ef1a2e4036492 assets\tutorial-mod-re\models\block\ice_ether_door_bottom_right_open.json
@@ -53,14 +53,14 @@ b789d85c6aaacb3eb6906be970e886579304f77c assets\tutorial-mod-re\models\item\ice_
 5096abd69bd2631df9fb2e1fdc0932b7f17059d0 assets\tutorial-mod-re\blockstates\ice_ether_fence.json
 f606259d352dcc1cf43bf1ca4d0a2f99f956bedb assets\tutorial-mod-re\models\item\ice_ether_wall.json
 3eccdd20bd79f8929227cab8196ad2e4d73a40a4 assets\tutorial-mod-re\blockstates\ice_ether_wall.json
-04f232d1e82473131ccc8fc78ddb591d4a3d2340 assets\tutorial-mod-re\models\item\fire_ether_sword.json
 043523046ab85ef4136bbd9891c30346b225ad8c assets\tutorial-mod-re\models\block\ice_ether_stairs.json
+04f232d1e82473131ccc8fc78ddb591d4a3d2340 assets\tutorial-mod-re\models\item\fire_ether_sword.json
 c2aa3aec3089a3adfa9879faeefe27d555191f8b assets\tutorial-mod-re\models\item\ice_ether_door.json
 00f2bb12f7b9f2b962fd99228feb19172ed099ba assets\tutorial-mod-re\models\block\ice_ether_slab.json
 6f6f43f685f26a08c02cec3b99d2e7cd4ef6cd38 assets\tutorial-mod-re\models\item\ice_ether_pressure_plate.json
 a127112d0a9b522ec6994c4aa0283bbb776c420a assets\tutorial-mod-re\blockstates\ice_ether_stairs.json
-74c26e2f5a8afcbaf36259d00d378ea770feccd4 assets\tutorial-mod-re\models\block\ice_ether_door_bottom_left.json
 7a9cb294184294d2afdcca2ff71411e1c3699b62 assets\tutorial-mod-re\models\item\ice_ether_ore.json
+74c26e2f5a8afcbaf36259d00d378ea770feccd4 assets\tutorial-mod-re\models\block\ice_ether_door_bottom_left.json
 0cef468136ec2417ac4678b961c356442b5051c6 assets\tutorial-mod-re\models\block\ice_ether_door_top_left_open.json
 c0eb7fef3cff00bc41275631a80d994f0d30f71b assets\tutorial-mod-re\models\block\ice_ether_trapdoor_bottom.json
 c2e320168a17e21517c9d08ef0e4d0d5a99b36ab assets\tutorial-mod-re\models\block\ice_ether_door_top_right.json
@@ -69,6 +69,6 @@ c2e320168a17e21517c9d08ef0e4d0d5a99b36ab assets\tutorial-mod-re\models\block\ice
 9d23753c514850654f8e284af956cb56f417e708 assets\tutorial-mod-re\models\item\ice_ether_button.json
 de9953e0d8a87ef1de1562d7dcc6b08f9021a277 assets\tutorial-mod-re\models\item\cheese.json
 6e175b3a0274ba55361b87442ef04e4d7d320bc5 assets\tutorial-mod-re\models\item\strawberry.json
-ab79bc7b4f7f5ee17482e00d6721c4cac01817ec assets\tutorial-mod-re\models\item\ice_ether_trapdoor.json
 e2add7e553bf8e00720e540db1ee2c42e3a4d774 assets\tutorial-mod-re\models\item\ice_ether_block.json
+ab79bc7b4f7f5ee17482e00d6721c4cac01817ec assets\tutorial-mod-re\models\item\ice_ether_trapdoor.json
 91511ce963071849ce6cda692b28a6951206d0f9 assets\tutorial-mod-re\models\item\pickaxe_axe.json
