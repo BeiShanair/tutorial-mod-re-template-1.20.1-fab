@@ -15,6 +15,8 @@ public class ModBlockTags {
     // 创建我们的方块标签
     public static final TagKey<Block> ETHER_BLOCK = of("ether_block");
 
+    public static final TagKey<Block> PICKAXE_AXE_MINEABLE = of("pickaxe_axe_mineable");
+
     // 注册方法，与物品的类似
     private static TagKey<Block> of(String id) {
         return TagKey.of(RegistryKeys.BLOCK, new Identifier(TutorialModRe.MOD_ID, id));

@@ -29,6 +29,7 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.FIRE_ETHER_PICKAXE, "Fire Ether Pickaxe");
         translationBuilder.add(ModItems.FIRE_ETHER_SWORD, "Fire Ether Sword");
         translationBuilder.add(ModItems.FIRE_ETHER_SHOVEL, "Fire Ether Shovel");
+        translationBuilder.add(ModItems.PICKAXE_AXE, "Pickaxe Axe");
 
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "Raw Ice Ether Block");

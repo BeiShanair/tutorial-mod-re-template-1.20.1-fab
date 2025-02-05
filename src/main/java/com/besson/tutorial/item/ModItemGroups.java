@@ -58,6 +58,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FIRE_ETHER_AXE);
                         entries.add(ModItems.FIRE_ETHER_HOE);
                         entries.add(ModItems.FIRE_ETHER_PICKAXE);
+                        entries.add(ModItems.PICKAXE_AXE);
                     }).build());
 
     // 初始化注册方法

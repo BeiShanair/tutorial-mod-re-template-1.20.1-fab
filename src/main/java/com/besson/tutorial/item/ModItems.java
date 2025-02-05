@@ -1,6 +1,7 @@
 package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialModRe;
+import com.besson.tutorial.item.custom.PickaxeAxe;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -44,6 +45,8 @@ public class ModItems {
     public static final Item FIRE_ETHER_HOE = registerItems("fire_ether_hoe", new HoeItem(ModToolMaterials.FIRE_ETHER,
             -4, 0.0f, new Item.Settings().fireproof()));
 
+    public static final Item PICKAXE_AXE = registerItems("pickaxe_axe", new PickaxeAxe(
+                    ModToolMaterials.FIRE_ETHER, 6.0f, -2.8f, new Item.Settings().fireproof()));
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
        以DIAMOND为例，我们可以看到其注册方法是这样的：（一共是三层，DIAMOND注册调用的是第一个方法）
