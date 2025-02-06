@@ -29,8 +29,10 @@ public class PickaxeAxe extends AxeItem {
         return state.isIn(ModBlockTags.PICKAXE_AXE_MINEABLE);
     }
 
+    // 重写appendTooltip，添加工具信息
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        // 可以用Screen.hasShiftDown()判断shift键是否被按下
         if (Screen.hasShiftDown()){
             tooltip.add(Text.translatable("tooltip.tutorial.pickaxe_axe.shift"));
         } else {

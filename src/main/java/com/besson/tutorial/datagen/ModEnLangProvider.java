@@ -48,6 +48,7 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");
 
+        // \u00A7为Unicode字符，即§，后面的数字6为颜色代码，即金色，参见Wiki上的格式化代码
         translationBuilder.add("tooltip.tutorial.pickaxe_axe", "Hold \u00A76Shift\u00A7r for more info!");
         translationBuilder.add("tooltip.tutorial.pickaxe_axe.shift", "This is a tool that can be used as a pickaxe and an axe");
     }
