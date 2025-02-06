@@ -43,6 +43,7 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ICE_ETHER_WALL);
 
+        // 将原版镐和斧能挖掘的方块合并到我们创建的tag中
         getOrCreateTagBuilder(ModBlockTags.PICKAXE_AXE_MINEABLE)
                 .forceAddTag(BlockTags.PICKAXE_MINEABLE)
                 .forceAddTag(BlockTags.AXE_MINEABLE);

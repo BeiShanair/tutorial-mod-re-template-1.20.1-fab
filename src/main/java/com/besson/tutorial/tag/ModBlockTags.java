@@ -15,6 +15,7 @@ public class ModBlockTags {
     // 创建我们的方块标签
     public static final TagKey<Block> ETHER_BLOCK = of("ether_block");
 
+    // 创建一个标签，用于我们PickAxe物品的方块判断
     public static final TagKey<Block> PICKAXE_AXE_MINEABLE = of("pickaxe_axe_mineable");
 
     // 注册方法，与物品的类似
