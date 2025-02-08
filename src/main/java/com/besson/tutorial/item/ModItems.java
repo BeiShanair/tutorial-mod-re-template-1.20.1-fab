@@ -47,6 +47,16 @@ public class ModItems {
 
     public static final Item PICKAXE_AXE = registerItems("pickaxe_axe", new PickaxeAxe(
                     ModToolMaterials.FIRE_ETHER, 6.0f, -2.8f, new Item.Settings().fireproof()));
+
+    // 盔甲
+    public static final Item ICE_ETHER_HELMET = registerItems("ice_ether_helmet",
+            new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.HELMET, new Item.Settings()));
+    public static final Item ICE_ETHER_CHESTPLATE = registerItems("ice_ether_chestplate",
+            new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.CHESTPLATE, new Item.Settings()));
+    public static final Item ICE_ETHER_LEGGINGS = registerItems("ice_ether_leggings",
+            new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.LEGGINGS, new Item.Settings()));
+    public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots",
+            new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.BOOTS, new Item.Settings()));
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
        以DIAMOND为例，我们可以看到其注册方法是这样的：（一共是三层，DIAMOND注册调用的是第一个方法）

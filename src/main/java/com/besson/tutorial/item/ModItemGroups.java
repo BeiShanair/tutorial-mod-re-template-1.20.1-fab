@@ -59,6 +59,10 @@ public class ModItemGroups {
                         entries.add(ModItems.FIRE_ETHER_HOE);
                         entries.add(ModItems.FIRE_ETHER_PICKAXE);
                         entries.add(ModItems.PICKAXE_AXE);
+                        entries.add(ModItems.ICE_ETHER_HELMET);
+                        entries.add(ModItems.ICE_ETHER_CHESTPLATE);
+                        entries.add(ModItems.ICE_ETHER_LEGGINGS);
+                        entries.add(ModItems.ICE_ETHER_BOOTS);
                     }).build());
 
     // 初始化注册方法

@@ -1,9 +1,7 @@
 package com.besson.tutorial.item;
 
-import com.google.common.base.Suppliers;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
