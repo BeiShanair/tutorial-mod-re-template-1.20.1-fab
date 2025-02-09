@@ -58,6 +58,10 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.LEGGINGS, new Item.Settings()));
     public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots",
             new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.BOOTS, new Item.Settings()));
+
+    // 马铠，HorseArmorItem是原版提供的马铠类，第一个参数是马铠的防御值，第二个参数是马铠的材质
+    public static final Item ICE_ETHER_HORSE_ARMOR = registerItems("ice_ether_horse_armor",
+            new HorseArmorItem(11, "ice_ether", new Item.Settings().maxCount(1)));
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
        以DIAMOND为例，我们可以看到其注册方法是这样的：（一共是三层，DIAMOND注册调用的是第一个方法）

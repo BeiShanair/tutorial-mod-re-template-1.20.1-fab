@@ -63,6 +63,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ICE_ETHER_CHESTPLATE);
                         entries.add(ModItems.ICE_ETHER_LEGGINGS);
                         entries.add(ModItems.ICE_ETHER_BOOTS);
+                        entries.add(ModItems.ICE_ETHER_HORSE_ARMOR);
                     }).build());
 
     // 初始化注册方法

@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-08T12:00:49.3032638	Tutorial Mod Re/Model Definitions
+// 1.20.1	2025-02-09T18:04:32.2859806	Tutorial Mod Re/Model Definitions
 434fe9434aee99408062680f3a88be16cfaddd7c assets\tutorial-mod-re\models\item\ice_ether_stairs.json
 9669d23dbf532cc85c61ea25df4bca14c623a117 assets\tutorial-mod-re\models\block\raw_ice_ether_block.json
 3c9881cbe8c7846f02406ae56be562bab5cdbf3c assets\tutorial-mod-re\models\item\ice_ether_boots_quartz_trim.json
@@ -33,14 +33,14 @@ c3e5234cb5a328ac4a019146057b030779561a93 assets\tutorial-mod-re\models\block\ice
 f3f64722dc354fcab052ab5a7ed564f2ac2fbc8e assets\tutorial-mod-re\models\item\ice_ether_chestplate_amethyst_trim.json
 092f6041887d61de9f059fd0ac34acb8206611e8 assets\tutorial-mod-re\models\block\ice_ether_wall_side_tall.json
 52f9197348c912feac74a961da55a97b4d6fef40 assets\tutorial-mod-re\models\item\ice_ether_boots_amethyst_trim.json
-027cbf4139e4e53ed6d3296377c16e913766d2fe assets\tutorial-mod-re\models\item\corn.json
 bbf0201754fd7cffa6bd346022d750887fdbb210 assets\tutorial-mod-re\models\block\ice_ether_fence_side.json
+027cbf4139e4e53ed6d3296377c16e913766d2fe assets\tutorial-mod-re\models\item\corn.json
 29c3ade4c90f31752bc2595c0dd5c7513f275e68 assets\tutorial-mod-re\models\item\raw_ice_ether.json
 b61efd16aae0b8a3671263e58844192bf76f81a3 assets\tutorial-mod-re\models\item\ice_ether_boots_diamond_trim.json
 1d834d3a5810a9bc21b6fe452d13a81fa2554f2c assets\tutorial-mod-re\models\item\ice_ether_chestplate_iron_trim.json
 250159881b39f05e46c29daaa147525c5bc9f178 assets\tutorial-mod-re\models\block\ice_ether_trapdoor_top.json
-a503de27b2d06c839a0563001476ed51e0097925 assets\tutorial-mod-re\models\item\ice_ether_helmet_emerald_trim.json
 4c8602d9b04538bd3917672ffbc9fe4de10c2fdb assets\tutorial-mod-re\models\item\ice_ether_boots_iron_trim.json
+a503de27b2d06c839a0563001476ed51e0097925 assets\tutorial-mod-re\models\item\ice_ether_helmet_emerald_trim.json
 8451f8f3da9ec5b201df6620288f1c45082404c0 assets\tutorial-mod-re\models\item\ice_ether_helmet_gold_trim.json
 0d3d6b693bcb87073d9a51c2e0bd2966e568c0ac assets\tutorial-mod-re\models\block\ice_ether_fence_inventory.json
 b49dd3dcab82742613c64d4d3efcf2d97dc8b19e assets\tutorial-mod-re\models\block\ice_ether_gate_wall_open.json
@@ -48,8 +48,9 @@ f6b2d96a4a7e3f8feeb14d5c9a027f379793fd31 assets\tutorial-mod-re\models\block\ice
 045bbad271d1f7a22066e54746ebe6f6d51398bf assets\tutorial-mod-re\models\item\anthracite.json
 fab05fde6708c681b415a478108046898018abb3 assets\tutorial-mod-re\blockstates\ice_ether_gate.json
 f6c7381e6f5e70d14b276a92d20170c26eb02e94 assets\tutorial-mod-re\models\item\ice_ether_helmet_quartz_trim.json
-04f232d1e82473131ccc8fc78ddb591d4a3d2340 assets\tutorial-mod-re\models\item\fire_ether_sword.json
+4bfdcf19ad8b533163b3416aae9b7ca23a2db0a7 assets\tutorial-mod-re\models\item\ice_ether_horse_armor.json
 9a73bf10d1572489684f166641847ec374a0a664 assets\tutorial-mod-re\models\item\ice_ether_leggings_emerald_trim.json
+04f232d1e82473131ccc8fc78ddb591d4a3d2340 assets\tutorial-mod-re\models\item\fire_ether_sword.json
 479c643245507fa04db420af1fe7c8d743e385e6 assets\tutorial-mod-re\models\item\ice_ether_boots_lapis_trim.json
 00f2bb12f7b9f2b962fd99228feb19172ed099ba assets\tutorial-mod-re\models\block\ice_ether_slab.json
 0c34a88e788c86954072c013e9ed63c0f194308d assets\tutorial-mod-re\models\item\ice_ether_leggings.json
