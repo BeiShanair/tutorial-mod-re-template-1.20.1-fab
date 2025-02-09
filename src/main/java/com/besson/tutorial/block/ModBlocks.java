@@ -1,7 +1,9 @@
 package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialModRe;
+import com.besson.tutorial.block.custom.StrawberryCrop;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -50,6 +52,14 @@ public class ModBlocks {
     public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor",
             new TrapdoorBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque(), BlockSetType.STONE));
 
+    /* 作物，相比之下，因为作物方块没有对应的方块物品，所以我们直接用Registry.register注册
+       其中，实例化的类也是我们创建的StrawberryCrop，接受参数为方块设置
+       noCollision代表这个方块没有碰撞箱，ticksRandomly代表这个方块有随机刻（对于作物这种会生长的方块而言，这是必须的）
+       breakInstantly代表这个方块可以瞬间破坏，pistonBehavior代表活塞对这个方块的行为（DESTROY代表破坏）
+     */
+    public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK,
+            new Identifier(TutorialModRe.MOD_ID, "strawberry_crop"),
+            new StrawberryCrop(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().pistonBehavior(PistonBehavior.DESTROY)));
 
 
     /* 同样的，我们也先去看看源代码的方块注册

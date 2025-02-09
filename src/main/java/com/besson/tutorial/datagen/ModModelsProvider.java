@@ -10,6 +10,7 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.state.property.Properties;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -34,6 +35,9 @@ public class ModModelsProvider extends FabricModelProvider {
                         blockFamily ->
                                 blockStateModelGenerator.registerCubeAllModelTexturePool(blockFamily.getBaseBlock())
                                         .family(blockFamily));
+
+        // 作物的模型文件需要罗列出其所有的生长阶段
+        blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, Properties.AGE_5, 0, 1, 2, 3, 4, 5);
     }
 
     @Override
