@@ -3,6 +3,7 @@ package com.besson.tutorial.block;
 import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
+import com.besson.tutorial.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -19,7 +20,8 @@ public class ModBlocks {
     /* 这里我们注册方块
        对于方块的设置，详见视频教程以及图文教程
      */
-    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
+    public static final Block ICE_ETHER_BLOCK = register("ice_ether_block",
+            new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque().sounds(ModSoundEvents.BLOCK_SOUND_GROUP)));
 
     public static final Block RAW_ICE_ETHER_BLOCK = register("raw_ice_ether_block", new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f).requiresTool()));
 
