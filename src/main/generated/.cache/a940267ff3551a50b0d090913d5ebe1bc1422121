@@ -1,8 +1,9 @@
-// 1.20.1	2025-02-11T21:56:22.0959132	Tutorial Mod Re/Model Definitions
+// 1.20.1	2025-02-11T22:26:14.4916045	Tutorial Mod Re/Model Definitions
 434fe9434aee99408062680f3a88be16cfaddd7c assets\tutorial-mod-re\models\item\ice_ether_stairs.json
 7e17f8befb46531e8bb8576f582b0b9b44d226b1 assets\tutorial-mod-re\models\block\corn_crop_stage3.json
 9669d23dbf532cc85c61ea25df4bca14c623a117 assets\tutorial-mod-re\models\block\raw_ice_ether_block.json
 c243da48a4f5bb1948a690cd8604bfa572fc695e assets\tutorial-mod-re\models\item\strawberry_seeds.json
+0aa6578feb80c9cc1251b8ad5356786df29b8209 assets\tutorial-mod-re\models\item\a_moment_apart_music_disc.json
 3c9881cbe8c7846f02406ae56be562bab5cdbf3c assets\tutorial-mod-re\models\item\ice_ether_boots_quartz_trim.json
 032dcb3a07642b76b02aa0eca2c127d72aa9258d assets\tutorial-mod-re\models\block\ice_ether_gate_wall.json
 98f60be143532bd93beac22b9292b0b905baedd7 assets\tutorial-mod-re\models\item\ice_ether_leggings_quartz_trim.json
@@ -41,8 +42,8 @@ f3f64722dc354fcab052ab5a7ed564f2ac2fbc8e assets\tutorial-mod-re\models\item\ice_
 092f6041887d61de9f059fd0ac34acb8206611e8 assets\tutorial-mod-re\models\block\ice_ether_wall_side_tall.json
 52f9197348c912feac74a961da55a97b4d6fef40 assets\tutorial-mod-re\models\item\ice_ether_boots_amethyst_trim.json
 c3f303c7e22598e0f8f4932ef2a88342f80f16f7 assets\tutorial-mod-re\models\block\corn_crop_stage2.json
-027cbf4139e4e53ed6d3296377c16e913766d2fe assets\tutorial-mod-re\models\item\corn.json
 bbf0201754fd7cffa6bd346022d750887fdbb210 assets\tutorial-mod-re\models\block\ice_ether_fence_side.json
+027cbf4139e4e53ed6d3296377c16e913766d2fe assets\tutorial-mod-re\models\item\corn.json
 29c3ade4c90f31752bc2595c0dd5c7513f275e68 assets\tutorial-mod-re\models\item\raw_ice_ether.json
 b61efd16aae0b8a3671263e58844192bf76f81a3 assets\tutorial-mod-re\models\item\ice_ether_boots_diamond_trim.json
 1d834d3a5810a9bc21b6fe452d13a81fa2554f2c assets\tutorial-mod-re\models\item\ice_ether_chestplate_iron_trim.json
@@ -131,7 +132,7 @@ c0eb7fef3cff00bc41275631a80d994f0d30f71b assets\tutorial-mod-re\models\block\ice
 4172fd3324d4324ec967947556a5cf68aa193db4 assets\tutorial-mod-re\models\item\ice_ether_fence.json
 de9953e0d8a87ef1de1562d7dcc6b08f9021a277 assets\tutorial-mod-re\models\item\cheese.json
 8702d72720bade3c2de24e5084618b907c792117 assets\tutorial-mod-re\models\block\strawberry_crop_stage1.json
-6e175b3a0274ba55361b87442ef04e4d7d320bc5 assets\tutorial-mod-re\models\item\strawberry.json
 6a84182271a752842dafe35eb7afba128ec433f7 assets\tutorial-mod-re\models\block\strawberry_crop_stage4.json
+6e175b3a0274ba55361b87442ef04e4d7d320bc5 assets\tutorial-mod-re\models\item\strawberry.json
 e2add7e553bf8e00720e540db1ee2c42e3a4d774 assets\tutorial-mod-re\models\item\ice_ether_block.json
 91511ce963071849ce6cda692b28a6951206d0f9 assets\tutorial-mod-re\models\item\pickaxe_axe.json

@@ -4,6 +4,7 @@ import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.custom.ModArmorItem;
 import com.besson.tutorial.item.custom.PickaxeAxe;
+import com.besson.tutorial.sound.ModSoundEvents;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -67,6 +68,9 @@ public class ModItems {
     // 种子，种子物品实例化的类为 AliasedBlockItem，第一个参数为种子对应的作物，第二个参数为种子物品的设置
     public static final Item STRAWBERRY_SEEDS = registerItems("strawberry_seeds",
             new AliasedBlockItem(ModBlocks.STRAWBERRY_CROP, new Item.Settings()));
+
+    public static final Item A_MOMENT_APART_MUSIC_DISC = registerItems("a_moment_apart_music_disc",
+            new MusicDiscItem(15, ModSoundEvents.A_MOMENT_APART_MUSIC_DISC, new Item.Settings().maxCount(1), 234));
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
        以DIAMOND为例，我们可以看到其注册方法是这样的：（一共是三层，DIAMOND注册调用的是第一个方法）
