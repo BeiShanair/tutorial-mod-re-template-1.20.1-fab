@@ -2,12 +2,12 @@ package com.besson.tutorial.datagen;
 
 import com.besson.tutorial.block.ModBlockFamilies;
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.state.property.Properties;
@@ -38,6 +38,17 @@ public class ModModelsProvider extends FabricModelProvider {
 
         // 作物的模型文件需要罗列出其所有的生长阶段
         blockStateModelGenerator.registerCrop(ModBlocks.STRAWBERRY_CROP, Properties.AGE_5, 0, 1, 2, 3, 4, 5);
+
+        // 同样在本次教程中，我们也采用另外一种方法来生成作物的模型文件，即像甜浆果那样的十字交叉型
+        blockStateModelGenerator.blockStateCollector.accept(
+                        VariantsBlockStateSupplier.create(ModBlocks.CORN_CROP)
+                                .coordinate(BlockStateVariantMap.create(CornCrop.AGE)
+                                                .register(stage -> BlockStateVariant.create()
+                                                                .put(VariantSettings.MODEL, blockStateModelGenerator.createSubModel(
+                                                                        ModBlocks.CORN_CROP, "_stage" + stage, Models.CROSS, TextureMap::cross))
+                                                )
+                                )
+                );
     }
 
     @Override

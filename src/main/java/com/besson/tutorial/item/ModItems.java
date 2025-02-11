@@ -26,7 +26,7 @@ public class ModItems {
 
 
     // 注册食物，调用食物组件
-    public static final Item CORN = registerItems("corn", new Item(new Item.Settings().food(ModFoodComponents.CORN)));
+    public static final Item CORN = registerItems("corn", new AliasedBlockItem(ModBlocks.CORN_CROP, new Item.Settings().food(ModFoodComponents.CORN)));
     public static final Item STRAWBERRY = registerItems("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
     public static final Item CHEESE = registerItems("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
 

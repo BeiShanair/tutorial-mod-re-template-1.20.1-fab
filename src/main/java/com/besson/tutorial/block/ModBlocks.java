@@ -1,6 +1,7 @@
 package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialModRe;
+import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -61,6 +62,9 @@ public class ModBlocks {
             new Identifier(TutorialModRe.MOD_ID, "strawberry_crop"),
             new StrawberryCrop(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block CORN_CROP = Registry.register(Registries.BLOCK,
+            new Identifier(TutorialModRe.MOD_ID, "corn_crop"),
+            new CornCrop(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().pistonBehavior(PistonBehavior.DESTROY)));
 
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层

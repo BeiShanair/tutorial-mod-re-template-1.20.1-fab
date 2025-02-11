@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "tutorial-mod-re:block/corn_crop_stage8"
+  }
+}

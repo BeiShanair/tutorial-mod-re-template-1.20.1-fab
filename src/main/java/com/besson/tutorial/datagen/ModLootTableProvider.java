@@ -1,17 +1,23 @@
 package com.besson.tutorial.datagen;
 
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.PotatoesBlock;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
+import net.minecraft.loot.condition.LootCondition;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
@@ -58,6 +64,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                 BlockStatePropertyLootCondition.builder(ModBlocks.STRAWBERRY_CROP)
                         .properties(StatePredicate.Builder.create().exactMatch(StrawberryCrop.AGE, 5));
         addDrop(ModBlocks.STRAWBERRY_CROP, cropDrops(ModBlocks.STRAWBERRY_CROP, ModItems.STRAWBERRY, ModItems.STRAWBERRY_SEEDS, builder));
+
+        // 在本次的教程中，我们讲CORN直接作为作物的种子，所有这里的战利品列表写法也有所不同（参见马铃薯、胡萝卜的写法）
+        LootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.CORN_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(CornCrop.AGE, 8));
+        addDrop(ModBlocks.CORN_CROP,
+                this.applyExplosionDecay(
+                        ModBlocks.CORN_CROP,
+                        LootTable.builder()
+                                .pool(LootPool.builder().with(ItemEntry.builder(ModItems.CORN)))
+                                .pool(
+                                        LootPool.builder()
+                                                .conditionally(builder2)
+                                                .with(ItemEntry.builder(ModItems.CORN).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286F, 3)))
+                                )
+                ));
     }
 
     /* 我们可以到原版的BlockLootTableGenerator中查看方块的战利品列表生成方法
