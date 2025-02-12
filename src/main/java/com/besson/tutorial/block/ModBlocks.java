@@ -2,6 +2,7 @@ package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.custom.CornCrop;
+import com.besson.tutorial.block.custom.SimpleOrangeClock;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import com.besson.tutorial.sound.ModSoundEvents;
 import net.minecraft.block.*;
@@ -70,6 +71,9 @@ public class ModBlocks {
     public static final Block CORN_CROP = Registry.register(Registries.BLOCK,
             new Identifier(TutorialModRe.MOD_ID, "corn_crop"),
             new CornCrop(AbstractBlock.Settings.create().noCollision().ticksRandomly().breakInstantly().pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block SIMPLE_ORANGE_CLOCK = register("simple_orange_clock",
+            new SimpleOrangeClock(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
 
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层
