@@ -69,6 +69,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ORANGE_NIGHTSTAND);
                         entries.add(ModItems.BASEBALL_BAT);
                         entries.add(ModBlocks.SIMPLE_ORANGE_CLOCK);
+                        entries.add(ModBlocks.SOFA);
                     }).build());
 
     // 初始化注册方法

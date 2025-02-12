@@ -1,8 +1,10 @@
-// 1.20.1	2025-02-12T20:08:45.2589742	Tutorial Mod Re/Recipes
-96c349bd093c631aa4d8a3d41887b83585ff93ee data\tutorial-mod-re\advancements\recipes\misc\ice_ether.json
-7e4d5e408d62693fd11a99a8d01b2cdd69e42fa2 data\tutorial-mod-re\advancements\recipes\misc\ice_ether_from_blasting_raw_ice_ether.json
-0a9049cf83cc968832d729af8816c136288acbff data\tutorial-mod-re\advancements\recipes\misc\ice_ether_ore.json
+// 1.20.1	2025-02-12T21:21:36.5194732	Tutorial Mod Re/Recipes
 be3b08e5b204ef13e271d8170c30fcfcafcc7b0e data\tutorial-mod-re\advancements\recipes\food\ice_ether_from_campfire_cooking.json
+a3e8adc669ad51fdb454dc8f2871b9df2283b567 data\tutorial-mod-re\recipes\ice_ether_from_blasting_raw_ice_ether.json
+b22fb4aef9b94c6c0393a7b72ddbc53eb921eb55 data\tutorial-mod-re\recipes\ice_ether_ore.json
+96c349bd093c631aa4d8a3d41887b83585ff93ee data\tutorial-mod-re\advancements\recipes\misc\ice_ether.json
+0a9049cf83cc968832d729af8816c136288acbff data\tutorial-mod-re\advancements\recipes\misc\ice_ether_ore.json
+7e4d5e408d62693fd11a99a8d01b2cdd69e42fa2 data\tutorial-mod-re\advancements\recipes\misc\ice_ether_from_blasting_raw_ice_ether.json
 7d8549453fccf95fd06e71a8d97eec2722c00a26 data\tutorial-mod-re\recipes\raw_ice_ether.json
 2d2f8432779bc27717cdf91d8661c290073a9674 data\tutorial-mod-re\recipes\ice_ether.json
 d7d2e7732376fb07f5e03fdfb90b98b45fefd9bf data\tutorial-mod-re\recipes\ice_ether_from_campfire_cooking.json
@@ -12,8 +14,6 @@ dce1df9cf7d037fda1c9ff943eb11fe2edc92a20 data\tutorial-mod-re\recipes\raw_ice_et
 3c1c04e3294a2d0b30797dceb92194b6685d99ac data\tutorial-mod-re\recipes\beetroot_to_sugar.json
 ceeba11155f8e695ccc2da48f133be199c68333a data\tutorial-mod-re\advancements\recipes\building_blocks\raw_ice_ether_block.json
 a0b971535c917a03f370b9b3249c1e330c227d3f data\tutorial-mod-re\recipes\ice_ether_from_smelting_raw_ice_ether.json
-cda7fefa2755105fbf9203bafcd1b98064c6c0b0 data\tutorial-mod-re\recipes\ice_ether_block.json
 e8c177a832b4447a6ef8908fc2fd86fb095e5d2c data\tutorial-mod-re\advancements\recipes\building_blocks\ice_ether_block.json
-a3e8adc669ad51fdb454dc8f2871b9df2283b567 data\tutorial-mod-re\recipes\ice_ether_from_blasting_raw_ice_ether.json
-b22fb4aef9b94c6c0393a7b72ddbc53eb921eb55 data\tutorial-mod-re\recipes\ice_ether_ore.json
+cda7fefa2755105fbf9203bafcd1b98064c6c0b0 data\tutorial-mod-re\recipes\ice_ether_block.json
 b30e7677282c1bd0eb8acc8ec726723ee07eb1a2 data\tutorial-mod-re\advancements\recipes\misc\beetroot_to_sugar.json
