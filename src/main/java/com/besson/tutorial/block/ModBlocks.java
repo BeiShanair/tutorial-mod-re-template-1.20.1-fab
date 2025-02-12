@@ -55,6 +55,9 @@ public class ModBlocks {
     public static final Block ICE_ETHER_TRAPDOOR = register("ice_ether_trapdoor",
             new TrapdoorBlock(AbstractBlock.Settings.copy(ICE_ETHER_BLOCK).nonOpaque(), BlockSetType.STONE));
 
+    public static final Block ORANGE_NIGHTSTAND = register("orange_nightstand",
+            new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
+
     /* 作物，相比之下，因为作物方块没有对应的方块物品，所以我们直接用Registry.register注册
        其中，实例化的类也是我们创建的StrawberryCrop，接受参数为方块设置
        noCollision代表这个方块没有碰撞箱，ticksRandomly代表这个方块有随机刻（对于作物这种会生长的方块而言，这是必须的）

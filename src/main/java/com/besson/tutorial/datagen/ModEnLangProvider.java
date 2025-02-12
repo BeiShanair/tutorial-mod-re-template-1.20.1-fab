@@ -40,6 +40,8 @@ public class ModEnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.STRAWBERRY_SEEDS, "Strawberry Seeds");
 
+        translationBuilder.add(ModItems.BASEBALL_BAT, "Baseball Bat");
+
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "Raw Ice Ether Block");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");
@@ -53,6 +55,8 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_WALL, "Ice Ether Wall");
         translationBuilder.add(ModBlocks.ICE_ETHER_DOOR, "Ice Ether Door");
         translationBuilder.add(ModBlocks.ICE_ETHER_TRAPDOOR, "Ice Ether Trapdoor");
+
+        translationBuilder.add(ModBlocks.ORANGE_NIGHTSTAND, "Orange Nightstand");
 
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");

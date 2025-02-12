@@ -49,6 +49,8 @@ public class ModModelsProvider extends FabricModelProvider {
                                                 )
                                 )
                 );
+        // 这里我们采用的方块模型文件为BlockBench制作，所以无需生成方块的模型文件，只要简单生成其方块状态文件即可
+        blockStateModelGenerator.registerSimpleState(ModBlocks.ORANGE_NIGHTSTAND);
     }
 
     @Override

@@ -66,6 +66,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ICE_ETHER_HORSE_ARMOR);
                         entries.add(ModItems.STRAWBERRY_SEEDS);
                         entries.add(ModItems.A_MOMENT_APART_MUSIC_DISC);
+                        entries.add(ModBlocks.ORANGE_NIGHTSTAND);
+                        entries.add(ModItems.BASEBALL_BAT);
                     }).build());
 
     // 初始化注册方法
