@@ -72,6 +72,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SOFA);
                         entries.add(ModBlocks.LAMP_BLOCK);
                         entries.add(ModBlocks.BED);
+                        entries.add(ModBlocks.PILLAR);
                     }).build());
 
     // 初始化注册方法

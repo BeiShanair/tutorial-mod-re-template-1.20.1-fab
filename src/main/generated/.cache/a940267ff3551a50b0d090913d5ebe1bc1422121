@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-13T19:10:29.0458232	Tutorial Mod Re/Model Definitions
+// 1.20.1	2025-02-13T19:50:06.7134236	Tutorial Mod Re/Model Definitions
 434fe9434aee99408062680f3a88be16cfaddd7c assets\tutorial-mod-re\models\item\ice_ether_stairs.json
 7e17f8befb46531e8bb8576f582b0b9b44d226b1 assets\tutorial-mod-re\models\block\corn_crop_stage3.json
 9669d23dbf532cc85c61ea25df4bca14c623a117 assets\tutorial-mod-re\models\block\raw_ice_ether_block.json
@@ -12,8 +12,8 @@ cc4f1caaeecf42043e8e95e753412e4679426cad assets\tutorial-mod-re\blockstates\oran
 22c56ee1f705ab8dd42802434788253e4cfc151a assets\tutorial-mod-re\models\block\strawberry_crop_stage2.json
 641c3db5697fafc07ace86755efe7eb1799a5ec1 assets\tutorial-mod-re\blockstates\ice_ether_block.json
 ca30934834f192c9385866a3b822aa689831b967 assets\tutorial-mod-re\blockstates\ice_ether_trapdoor.json
-984f496dafb30bc25dad846cbc0ced0409260d56 assets\tutorial-mod-re\models\item\ice_ether_boots_gold_trim.json
 d5a97df18c4c67419620a4d96e6923456e2286f4 assets\tutorial-mod-re\models\item\ice_ether_helmet_copper_trim.json
+984f496dafb30bc25dad846cbc0ced0409260d56 assets\tutorial-mod-re\models\item\ice_ether_boots_gold_trim.json
 ee6f41a1b50eba3f43439b2764ec988b311820dd assets\tutorial-mod-re\blockstates\ice_ether_pressure_plate.json
 0fdb003908aa193ca4bd522d9a3df6426bb2edf2 assets\tutorial-mod-re\models\block\corn_crop_stage4.json
 7544daac99a31e06ecaafdb79c0d604bc6db1a62 assets\tutorial-mod-re\models\block\ice_ether_button_pressed.json
@@ -54,9 +54,9 @@ b61efd16aae0b8a3671263e58844192bf76f81a3 assets\tutorial-mod-re\models\item\ice_
 1d834d3a5810a9bc21b6fe452d13a81fa2554f2c assets\tutorial-mod-re\models\item\ice_ether_chestplate_iron_trim.json
 250159881b39f05e46c29daaa147525c5bc9f178 assets\tutorial-mod-re\models\block\ice_ether_trapdoor_top.json
 64a3af6867db24aa81a8db43c4060b046a63a93d assets\tutorial-mod-re\models\block\strawberry_crop_stage5.json
+4c8602d9b04538bd3917672ffbc9fe4de10c2fdb assets\tutorial-mod-re\models\item\ice_ether_boots_iron_trim.json
 a503de27b2d06c839a0563001476ed51e0097925 assets\tutorial-mod-re\models\item\ice_ether_helmet_emerald_trim.json
 8451f8f3da9ec5b201df6620288f1c45082404c0 assets\tutorial-mod-re\models\item\ice_ether_helmet_gold_trim.json
-4c8602d9b04538bd3917672ffbc9fe4de10c2fdb assets\tutorial-mod-re\models\item\ice_ether_boots_iron_trim.json
 0d3d6b693bcb87073d9a51c2e0bd2966e568c0ac assets\tutorial-mod-re\models\block\ice_ether_fence_inventory.json
 b49dd3dcab82742613c64d4d3efcf2d97dc8b19e assets\tutorial-mod-re\models\block\ice_ether_gate_wall_open.json
 f6b2d96a4a7e3f8feeb14d5c9a027f379793fd31 assets\tutorial-mod-re\models\block\ice_ether_trapdoor_open.json
@@ -81,6 +81,7 @@ a0ef1529558d36adc2ec4d96993813c1b3982c00 assets\tutorial-mod-re\models\item\ice_
 d3ac30683a28496331a40c7c94c986b60358efc6 assets\tutorial-mod-re\blockstates\sofa.json
 7643bf2f1abd3908eb67299ea208f74e19670b5f assets\tutorial-mod-re\models\item\ice_ether_leggings_diamond_trim.json
 ab79bc7b4f7f5ee17482e00d6721c4cac01817ec assets\tutorial-mod-re\models\item\ice_ether_trapdoor.json
+deb2e08a91b8aa59f81063d59123a08949fbe857 assets\tutorial-mod-re\models\item\pillar.json
 a9dc546b75f90801371eee25b33b53375ab88543 assets\tutorial-mod-re\models\item\ice_ether_leggings_gold_trim.json
 ea7ee77b8ca7c99911eb46e527dd57f9b335e60b assets\tutorial-mod-re\models\block\ice_ether_fence_post.json
 953864139e8129291cbbc5ff0e0a9eeda3db977d assets\tutorial-mod-re\models\block\ice_ether_pressure_plate_down.json
@@ -102,8 +103,8 @@ b144658f86eb05fe4435bc1e0101f67a0a9e5b7b assets\tutorial-mod-re\models\block\ice
 073ff4a3f78cb22c6933cfab0f6339be6929d1f9 assets\tutorial-mod-re\models\block\ice_ether_wall_side.json
 fe4dc2c35a6058daa19af9f2ec7d09e10f8a249d assets\tutorial-mod-re\models\item\ice_ether_chestplate.json
 6dce0544329e9b2d334f4bd16a23ea6bd9158ae6 assets\tutorial-mod-re\models\block\ice_ether_door_bottom_right.json
-3746a55c43754e32cf774267ad6ea123e1d47ecd assets\tutorial-mod-re\models\block\ice_ether_door_bottom_left_open.json
 65b06bf601f8be862b4bb242c8db28a5367b1436 assets\tutorial-mod-re\models\item\ice_ether_leggings_iron_trim.json
+3746a55c43754e32cf774267ad6ea123e1d47ecd assets\tutorial-mod-re\models\block\ice_ether_door_bottom_left_open.json
 7e2436930a3357fb08998f5788de48e884907d69 assets\tutorial-mod-re\models\item\lamp_block.json
 b268b2cc7d29313fc0ef2486b9dcf0d9c68baace assets\tutorial-mod-re\models\item\ice_ether_helmet_lapis_trim.json
 f93af9d782716abefa254df7fa73fb79fca5933b assets\tutorial-mod-re\models\item\ice_ether_boots_copper_trim.json
