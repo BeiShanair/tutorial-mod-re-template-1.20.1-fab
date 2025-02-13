@@ -9,6 +9,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -78,6 +79,9 @@ public class ModBlocks {
 
     public static final Block LAMP_BLOCK = register("lamp_block",
             new LampBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
+
+    public static final Block BED = register("bed",
+            new ModBedBlock(DyeColor.BLACK, AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
 
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层

@@ -71,6 +71,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SIMPLE_ORANGE_CLOCK);
                         entries.add(ModBlocks.SOFA);
                         entries.add(ModBlocks.LAMP_BLOCK);
+                        entries.add(ModBlocks.BED);
                     }).build());
 
     // 初始化注册方法
