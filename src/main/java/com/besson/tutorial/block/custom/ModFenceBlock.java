@@ -10,6 +10,9 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.WorldAccess;
 
 public class ModFenceBlock extends Block {
+    // 原版的FenceBlock,HorizontalConnectingBlock,ConnectingBlock都是值得研究的连接型方块的案例
+
+    // 东西南北的布尔值属性
     public static final BooleanProperty NORTH = ConnectingBlock.NORTH;
     public static final BooleanProperty EAST = ConnectingBlock.EAST;
     public static final BooleanProperty SOUTH = ConnectingBlock.SOUTH;
@@ -17,6 +20,7 @@ public class ModFenceBlock extends Block {
 
     public ModFenceBlock(Settings settings) {
         super(settings);
+        // 设置默认状态
         this.setDefaultState(this.stateManager.getDefaultState()
                 .with(NORTH, false)
                 .with(EAST, false)
@@ -24,11 +28,13 @@ public class ModFenceBlock extends Block {
                 .with(WEST, false));
     }
 
+    // 添加方块状态
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(NORTH, EAST, SOUTH, WEST);
     }
 
+    // 重写getStateForNeighborUpdate
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
 

@@ -73,6 +73,7 @@ public class ModModelsProvider extends FabricModelProvider {
         // 创建方块的物品模型我文件，不生成方块的方块状态及方块模型文件
         blockStateModelGenerator.registerParentedItemModel(ModBlocks.PILLAR, ModelIds.getBlockModelId(ModBlocks.PILLAR));
 
+        // 下面的生成方法源自原版的栅栏，当然，这里我们将它的UV锁去除了，不然渲染上会出问题
         Identifier postModel = new Identifier(TutorialModRe.MOD_ID, "block/fence_post");
         Identifier sideModel = new Identifier(TutorialModRe.MOD_ID, "block/fence_side");
         blockStateModelGenerator.blockStateCollector
