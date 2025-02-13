@@ -1,10 +1,7 @@
 package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialModRe;
-import com.besson.tutorial.block.custom.CornCrop;
-import com.besson.tutorial.block.custom.SimpleOrangeClock;
-import com.besson.tutorial.block.custom.SofaBlock;
-import com.besson.tutorial.block.custom.StrawberryCrop;
+import com.besson.tutorial.block.custom.*;
 import com.besson.tutorial.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -78,6 +75,9 @@ public class ModBlocks {
 
     public static final Block SOFA = register("sofa",
             new SofaBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
+
+    public static final Block LAMP_BLOCK = register("lamp_block",
+            new LampBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
 
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层
