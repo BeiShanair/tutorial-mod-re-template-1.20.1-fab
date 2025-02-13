@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-13T19:50:06.7134236	Tutorial Mod Re/Model Definitions
+// 1.20.1	2025-02-13T21:35:12.7526323	Tutorial Mod Re/Model Definitions
 434fe9434aee99408062680f3a88be16cfaddd7c assets\tutorial-mod-re\models\item\ice_ether_stairs.json
 7e17f8befb46531e8bb8576f582b0b9b44d226b1 assets\tutorial-mod-re\models\block\corn_crop_stage3.json
 9669d23dbf532cc85c61ea25df4bca14c623a117 assets\tutorial-mod-re\models\block\raw_ice_ether_block.json
@@ -93,11 +93,13 @@ bef584a3b159fb4cf138bf36c9b3fc311557573c assets\tutorial-mod-re\models\block\ice
 3d1c248fa5e6ff370b76050052d3cb3a56803b5a assets\tutorial-mod-re\blockstates\ice_ether_door.json
 415a39c410361ac83a654016d3486f611838c10f assets\tutorial-mod-re\models\item\ice_ether_chestplate_quartz_trim.json
 296800238c1359618c54e9d86cbd7abb8929db47 assets\tutorial-mod-re\models\item\ice_ether_leggings_redstone_trim.json
+7b503ee898098c34e97ec56f597bcfc43e69df48 assets\tutorial-mod-re\models\item\fence.json
 8e31ba7f7814d9941c9fd84ea77c5237d8ce7d4c assets\tutorial-mod-re\models\item\ice_ether_leggings_netherite_trim.json
 3e01a091aa1f9715ad07eeff84bedcce18bb6448 assets\tutorial-mod-re\models\block\ice_ether_wall_inventory.json
 c16303bb00b4c1236ef6af4d33d35028588fc0f0 assets\tutorial-mod-re\models\item\ice_ether_helmet.json
 17870fea98327a45aeea48a3a8b571b15711dc3f assets\tutorial-mod-re\models\block\ice_ether_slab_top.json
 f87a428e73ff3d89a3e62b5eee9743b19c1cf205 assets\tutorial-mod-re\blockstates\ice_ether_ore.json
+9bb26e44558ba2d3c9998101fa4483fce0d4714a assets\tutorial-mod-re\blockstates\fence.json
 8ae105760cfd449f7b909ed7d610c9b88b8b1e24 assets\tutorial-mod-re\blockstates\bed.json
 b144658f86eb05fe4435bc1e0101f67a0a9e5b7b assets\tutorial-mod-re\models\block\ice_ether_gate.json
 073ff4a3f78cb22c6933cfab0f6339be6929d1f9 assets\tutorial-mod-re\models\block\ice_ether_wall_side.json
@@ -119,8 +121,8 @@ d91d4f99351858d9d874ab22489006bdf1ece3a9 assets\tutorial-mod-re\models\block\ice
 f88dc2018985d75cbb4c71d2bdaaea727cbc0f94 assets\tutorial-mod-re\models\block\corn_crop_stage0.json
 6b7531597145203a6cd1d4434989f03dd8847a53 assets\tutorial-mod-re\models\item\ice_ether_helmet_netherite_trim.json
 b6e8fcff1d871cf0179c214213313d57a1ddf708 assets\tutorial-mod-re\models\item\ice_ether_chestplate_diamond_trim.json
-60d48fdeb30d24de1baae97eaa521a488b011ccf assets\tutorial-mod-re\models\block\corn_crop_stage6.json
 394b0f1060207ad546f19c26b61d1cb15b0177fd assets\tutorial-mod-re\models\item\fire_ether_hoe.json
+60d48fdeb30d24de1baae97eaa521a488b011ccf assets\tutorial-mod-re\models\block\corn_crop_stage6.json
 b2e11ae913f29116791f589c33a768ba631dccdf assets\tutorial-mod-re\models\item\ice_ether_boots_netherite_trim.json
 b789d85c6aaacb3eb6906be970e886579304f77c assets\tutorial-mod-re\models\item\ice_ether.json
 acb20e1e9b8102d1e976783266773b2e413ade15 assets\tutorial-mod-re\models\item\ice_ether_leggings_amethyst_trim.json

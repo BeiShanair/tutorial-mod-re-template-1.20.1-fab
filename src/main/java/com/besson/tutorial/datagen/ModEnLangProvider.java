@@ -63,6 +63,7 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.LAMP_BLOCK, "Lamp Block");
         translationBuilder.add(ModBlocks.BED, "Bed");
         translationBuilder.add(ModBlocks.PILLAR, "Pillar");
+        translationBuilder.add(ModBlocks.FENCE, "Fence");
 
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");

@@ -1,8 +1,8 @@
-// 1.20.1	2025-02-13T19:50:06.712423	Tutorial Mod Re/Tags for minecraft:block
+// 1.20.1	2025-02-13T21:35:12.7516319	Tutorial Mod Re/Tags for minecraft:block
 a3c24adfb93dba3014a81cdfc8978ed3cc7e4761 data\minecraft\tags\blocks\fences.json
 2e04d45b2a59e9cd34c08b9647094e2e8b7615c8 data\minecraft\tags\blocks\fence_gates.json
 2a7b84ff7aa220aac6c6d2d226add199fcd00b68 data\minecraft\tags\blocks\mineable\pickaxe.json
 8a2ddd2f26fe54e635c57076344d5542ca82884e data\tutorial-mod-re\tags\blocks\ether_block.json
 74eb4d7009fe773bcbc2304f8104e47067f16da3 data\minecraft\tags\blocks\needs_iron_tool.json
-68ef4f3c65fd3184f1d8ea14d400b85ef198803b data\tutorial-mod-re\tags\blocks\pickaxe_axe_mineable.json
 5ee68e124062eace2e6b98c2f2e90308cbec9562 data\minecraft\tags\blocks\walls.json
+68ef4f3c65fd3184f1d8ea14d400b85ef198803b data\tutorial-mod-re\tags\blocks\pickaxe_axe_mineable.json
