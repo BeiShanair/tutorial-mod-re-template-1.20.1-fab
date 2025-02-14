@@ -88,7 +88,10 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
 
     public static final Block FENCE = register("fence",
-            new ModFenceBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque().notSolid()));
+            new ModFenceBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
+
+    public static final Block SIMPLE_CABINET = register("simple_cabinet",
+            new SimpleCabinet(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque(), () -> ModBlockEntities.SIMPLE_CABINET));
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层
        自然，id是要改成我们自己的命名空间的

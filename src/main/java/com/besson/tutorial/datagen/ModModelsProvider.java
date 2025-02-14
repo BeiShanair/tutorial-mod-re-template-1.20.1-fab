@@ -77,6 +77,8 @@ public class ModModelsProvider extends FabricModelProvider {
         Identifier sideModel = new Identifier(TutorialModRe.MOD_ID, "block/fence_side");
         blockStateModelGenerator.blockStateCollector
                 .accept(createFenceBlockState(ModBlocks.FENCE, postModel, sideModel));
+
+        blockStateModelGenerator.registerSimpleState(ModBlocks.SIMPLE_CABINET);
     }
 
     public static BlockStateSupplier createFenceBlockState(Block fenceBlock, Identifier postModelId, Identifier sideModelId) {

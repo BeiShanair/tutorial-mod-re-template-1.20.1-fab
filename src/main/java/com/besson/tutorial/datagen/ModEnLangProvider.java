@@ -64,6 +64,7 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.BED, "Bed");
         translationBuilder.add(ModBlocks.PILLAR, "Pillar");
         translationBuilder.add(ModBlocks.FENCE, "Fence");
+        translationBuilder.add(ModBlocks.SIMPLE_CABINET, "Simple Cabinet");
 
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");
@@ -82,5 +83,7 @@ public class ModEnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.A_MOMENT_APART_MUSIC_DISC, "A Moment Apart Music Disc");
         translationBuilder.add(ModItems.A_MOMENT_APART_MUSIC_DISC.getTranslationKey() + ".desc", "Odesza - A Moment Apart");
+
+        translationBuilder.add("container.simple_cabinet", "Simple Cabinet");
     }
 }
