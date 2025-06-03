@@ -2,6 +2,7 @@ package com.besson.tutorial;
 
 import com.besson.tutorial.block.ModBlockEntities;
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.ModFluids;
 import com.besson.tutorial.item.ModItemGroups;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSoundEvents;
@@ -43,6 +44,7 @@ public class TutorialModRe implements ModInitializer {
 
 		ModBlockEntities.registerModBlockEntities();
 
+		ModFluids.registerModFluids();
 		// 燃料最快捷的注册方法是用Fabric的API实现，参数分别为燃料和燃烧时间（tick）
 //		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 600);
 	}

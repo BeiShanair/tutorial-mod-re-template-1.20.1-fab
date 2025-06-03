@@ -2,15 +2,15 @@ package com.besson.tutorial;
 
 import com.besson.tutorial.block.ModBlockEntities;
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.ModFluids;
 import com.besson.tutorial.block.SeatRenderer;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.minecraft.util.Identifier;
 
 public class TutorialModReClient implements ClientModInitializer {
 
@@ -29,5 +29,15 @@ public class TutorialModReClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CORN_CROP, RenderLayer.getCutout());
 
 		EntityRendererRegistry.register(ModBlockEntities.SEAT, SeatRenderer::new);
+
+		// 为流体设置颜色
+		FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.OIL, ModFluids.FLOWING_OIL,
+				new SimpleFluidRenderHandler(
+						new Identifier("minecraft:block/water_still"),
+						new Identifier("minecraft:block/water_flow"),
+						0x42413b
+				));
+		// 设置渲染层
+		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluids.OIL, ModFluids.FLOWING_OIL);
 	}
 }

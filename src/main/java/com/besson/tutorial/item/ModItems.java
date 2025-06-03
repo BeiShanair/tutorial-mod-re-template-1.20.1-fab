@@ -2,6 +2,7 @@ package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.ModFluids;
 import com.besson.tutorial.item.custom.ModArmorItem;
 import com.besson.tutorial.item.custom.PickaxeAxe;
 import com.besson.tutorial.sound.ModSoundEvents;
@@ -73,6 +74,10 @@ public class ModItems {
             new MusicDiscItem(15, ModSoundEvents.A_MOMENT_APART_MUSIC_DISC, new Item.Settings().maxCount(1), 234));
 
     public static final Item BASEBALL_BAT = registerItems("baseball_bat", new Item(new Item.Settings()));
+
+    public static final Item OIL_BUCKET = registerItems("oil_bucket", new BucketItem(
+                    ModFluids.OIL, new Item.Settings().maxCount(1).recipeRemainder(Items.BUCKET)));
+
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
        以DIAMOND为例，我们可以看到其注册方法是这样的：（一共是三层，DIAMOND注册调用的是第一个方法）

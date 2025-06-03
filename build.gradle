@@ -16,6 +16,16 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	// This is the repositories block in your build.gradle. NOT the one in publishing, or in buildscript. If it does not exist already, create it.
+	maven {
+		name = 'GeckoLib'
+		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+		content {
+			includeGroupByRegex("software\\.bernie.*")
+			includeGroup("com.eliotlash.mclib")
+		}
+	}
+	maven { url "https://maven.shedaniel.me" }
 }
 
 fabricApi {
@@ -32,7 +42,12 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
+	implementation("com.eliotlash.mclib:mclib:20")
+
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:12.1.780"
+	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:12.1.780"
 }
 
 processResources {

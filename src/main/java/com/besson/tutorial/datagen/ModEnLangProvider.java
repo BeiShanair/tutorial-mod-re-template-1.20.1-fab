@@ -42,6 +42,8 @@ public class ModEnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModItems.BASEBALL_BAT, "Baseball Bat");
 
+        translationBuilder.add(ModItems.OIL_BUCKET, "Oil Bucket");
+
         translationBuilder.add(ModBlocks.ICE_ETHER_BLOCK, "Ice Ether Block");
         translationBuilder.add(ModBlocks.RAW_ICE_ETHER_BLOCK, "Raw Ice Ether Block");
         translationBuilder.add(ModBlocks.ICE_ETHER_ORE, "Ice Ether Ore");

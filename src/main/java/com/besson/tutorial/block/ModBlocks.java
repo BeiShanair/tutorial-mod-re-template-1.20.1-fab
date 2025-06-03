@@ -92,6 +92,12 @@ public class ModBlocks {
 
     public static final Block SIMPLE_CABINET = register("simple_cabinet",
             new SimpleCabinet(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque(), () -> ModBlockEntities.SIMPLE_CABINET));
+
+    public static final Block OIL = Registry.register(Registries.BLOCK, new Identifier(TutorialModRe.MOD_ID, "oil"),
+            new FluidBlock(ModFluids.OIL, AbstractBlock.Settings.copy(Blocks.WATER)));
+
+
+
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层
        自然，id是要改成我们自己的命名空间的

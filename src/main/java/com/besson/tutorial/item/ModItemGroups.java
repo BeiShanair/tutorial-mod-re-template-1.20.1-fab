@@ -75,6 +75,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PILLAR);
                         entries.add(ModBlocks.FENCE);
                         entries.add(ModBlocks.SIMPLE_CABINET);
+                        entries.add(ModItems.OIL_BUCKET);
                     }).build());
 
     // 初始化注册方法
