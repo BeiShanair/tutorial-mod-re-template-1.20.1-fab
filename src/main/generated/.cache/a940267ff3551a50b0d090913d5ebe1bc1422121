@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-13T15:11:52.2135898	Tutorial Mod Re/Model Definitions
+// 1.20.1	2025-06-13T15:29:28.0442095	Tutorial Mod Re/Model Definitions
 434fe9434aee99408062680f3a88be16cfaddd7c assets\tutorial-mod-re\models\item\ice_ether_stairs.json
 7e17f8befb46531e8bb8576f582b0b9b44d226b1 assets\tutorial-mod-re\models\block\corn_crop_stage3.json
 9669d23dbf532cc85c61ea25df4bca14c623a117 assets\tutorial-mod-re\models\block\raw_ice_ether_block.json
@@ -33,8 +33,8 @@ abac69200f23bf1d9211e01a08092064edd15a19 assets\tutorial-mod-re\models\item\stri
 72db85383cb526e20cdb4069ae4dd1a6f912b146 assets\tutorial-mod-re\blockstates\ice_ether_sign.json
 8d27bfd1679898fa9976ee0e2016394badf66f09 assets\tutorial-mod-re\models\item\ice_ether_slab.json
 d48ebc6dc902e199ef8f98d1e09ef1a2e4036492 assets\tutorial-mod-re\models\block\ice_ether_door_bottom_right_open.json
-0413bcd42cc606c5a8b8c70474684198e9db1245 assets\tutorial-mod-re\models\block\strawberry_crop_stage3.json
 2ee5593f089fb498887b9e4fe4729cab3a6bbef5 assets\tutorial-mod-re\models\item\bed.json
+0413bcd42cc606c5a8b8c70474684198e9db1245 assets\tutorial-mod-re\models\block\strawberry_crop_stage3.json
 8f2f0a4a7d69dec0231a7340f97034e9e2a7a0d8 assets\tutorial-mod-re\blockstates\simple_orange_clock.json
 ca4e6397eeb082921b52088f2950ce2b0e68d83b assets\tutorial-mod-re\models\block\ice_ether_button.json
 3c78b8b927b5b1f66272ae818cc6705f3d412df2 assets\tutorial-mod-re\models\block\ice_ether_wall_post.json
@@ -74,8 +74,8 @@ f6b2d96a4a7e3f8feeb14d5c9a027f379793fd31 assets\tutorial-mod-re\models\block\ice
 77bc3a550ba87dd710a2952cfa8d6a92a89a5b10 assets\tutorial-mod-re\models\block\corn_crop_stage7.json
 045bbad271d1f7a22066e54746ebe6f6d51398bf assets\tutorial-mod-re\models\item\anthracite.json
 fab05fde6708c681b415a478108046898018abb3 assets\tutorial-mod-re\blockstates\ice_ether_gate.json
-c9c43ca8c2f4cee5494694aab734f2ff1cf791d2 assets\tutorial-mod-re\blockstates\stripped_ice_ether_log.json
 43a71d2e46265f51708aab73142e84bda5ea9794 assets\tutorial-mod-re\blockstates\ice_ether_wood.json
+c9c43ca8c2f4cee5494694aab734f2ff1cf791d2 assets\tutorial-mod-re\blockstates\stripped_ice_ether_log.json
 f6c7381e6f5e70d14b276a92d20170c26eb02e94 assets\tutorial-mod-re\models\item\ice_ether_helmet_quartz_trim.json
 1ba418f18366b3a6abeaf86915eda2086e5f8184 assets\tutorial-mod-re\models\block\ice_ether_wood.json
 4bfdcf19ad8b533163b3416aae9b7ca23a2db0a7 assets\tutorial-mod-re\models\item\ice_ether_horse_armor.json
@@ -149,8 +149,8 @@ b6e8fcff1d871cf0179c214213313d57a1ddf708 assets\tutorial-mod-re\models\item\ice_
 339750f7c13307921407e0f1e4247d345d55f150 assets\tutorial-mod-re\blockstates\ice_ether_tree_sapling.json
 7dbc3fb57a01d1a7ac4191e78af5271d2e00bf8b assets\tutorial-mod-re\models\block\ice_ether_log_horizontal.json
 30280cebf0db3da40c2055f04034d2ccdf7bcc14 assets\tutorial-mod-re\models\item\ice_ether_sign.json
-60d48fdeb30d24de1baae97eaa521a488b011ccf assets\tutorial-mod-re\models\block\corn_crop_stage6.json
 394b0f1060207ad546f19c26b61d1cb15b0177fd assets\tutorial-mod-re\models\item\fire_ether_hoe.json
+60d48fdeb30d24de1baae97eaa521a488b011ccf assets\tutorial-mod-re\models\block\corn_crop_stage6.json
 f0975c2be2731ca8432c3ab0a83a29bed422debc assets\tutorial-mod-re\models\block\ice_ether_sign.json
 5e6e8f13010f3d291988b2443a44cfe4665908ad assets\tutorial-mod-re\blockstates\ice_ether_leaves.json
 f548afb1ee8393b0cb2f9dc3ca75dc5069258736 assets\tutorial-mod-re\models\item\ice_ether_tree_sapling.json
@@ -177,8 +177,8 @@ c0eb7fef3cff00bc41275631a80d994f0d30f71b assets\tutorial-mod-re\models\block\ice
 4172fd3324d4324ec967947556a5cf68aa193db4 assets\tutorial-mod-re\models\item\ice_ether_fence.json
 de9953e0d8a87ef1de1562d7dcc6b08f9021a277 assets\tutorial-mod-re\models\item\cheese.json
 8702d72720bade3c2de24e5084618b907c792117 assets\tutorial-mod-re\models\block\strawberry_crop_stage1.json
-6e175b3a0274ba55361b87442ef04e4d7d320bc5 assets\tutorial-mod-re\models\item\strawberry.json
 6a84182271a752842dafe35eb7afba128ec433f7 assets\tutorial-mod-re\models\block\strawberry_crop_stage4.json
+6e175b3a0274ba55361b87442ef04e4d7d320bc5 assets\tutorial-mod-re\models\item\strawberry.json
 6c2f2295626af0169f8cc3da0b60f1f0b0656327 assets\tutorial-mod-re\models\block\stripped_ice_ether_log_horizontal.json
 e2add7e553bf8e00720e540db1ee2c42e3a4d774 assets\tutorial-mod-re\models\item\ice_ether_block.json
 91511ce963071849ce6cda692b28a6951206d0f9 assets\tutorial-mod-re\models\item\pickaxe_axe.json

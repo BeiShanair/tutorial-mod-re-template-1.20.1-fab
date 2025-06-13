@@ -9,6 +9,7 @@ import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSoundEvents;
 import com.besson.tutorial.util.ModCustomTrades;
 import com.besson.tutorial.villager.ModVillagers;
+import com.besson.tutorial.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -50,6 +51,7 @@ public class TutorialModRe implements ModInitializer {
 		ModFluids.registerModFluids();
 
 		ModBoats.registerBoats();
+		ModWorldGeneration.registerWorldGeneration();
 		// 燃料最快捷的注册方法是用Fabric的API实现，参数分别为燃料和燃烧时间（tick）
 //		FuelRegistry.INSTANCE.add(ModItems.ANTHRACITE, 600);
 
