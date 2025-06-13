@@ -64,5 +64,11 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         // 对于食物类的加工配方，如烟熏炉和营火配方，可以直接使用RecipeProvider.offerFoodCookingRecipe来写
         RecipeProvider.offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING,
                 600, ModItems.RAW_ICE_ETHER, ModItems.ICE_ETHER, 0.35F);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ANTHRACITE, 1)
+                .input(Items.COAL)
+                .input(ModItems.FIRE_ETHER)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(Items.COAL))
+                .offerTo(exporter, Identifier.of(TutorialModRe.MOD_ID, "anthracite"));
     }
 }

@@ -4,6 +4,7 @@ import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.block.ModFluids;
 import com.besson.tutorial.entity.ModBoats;
+import com.besson.tutorial.item.custom.FireEther;
 import com.besson.tutorial.item.custom.ModArmorItem;
 import com.besson.tutorial.item.custom.PickaxeAxe;
 import com.besson.tutorial.sound.ModSoundEvents;
@@ -38,7 +39,7 @@ public class ModItems {
     public static final Item ANTHRACITE = registerItems("anthracite", new Item(new Item.Settings()));
 
     // 先注册一个工具的材料
-    public static final Item FIRE_ETHER = registerItems("fire_ether", new Item(new Item.Settings()));
+    public static final Item FIRE_ETHER = registerItems("fire_ether", new FireEther(new Item.Settings()));
     // 注册工具，其中的两个数值为额外攻击伤害加成和攻击速度加成，可参考原版
     public static final Item FIRE_ETHER_SWORD = registerItems("fire_ether_sword", new SwordItem(ModToolMaterials.FIRE_ETHER,
             3, -2.0f, new Item.Settings().fireproof()));
