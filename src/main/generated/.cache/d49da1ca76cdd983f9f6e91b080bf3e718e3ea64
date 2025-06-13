@@ -1,5 +1,11 @@
-// 1.20.1	2025-06-13T16:08:21.3566044	Tutorial Mod Re/World Gen
+// 1.20.1	2025-06-13T16:57:12.1733124	Tutorial Mod Re/World Gen
+481a5581ae3b5b65929c4071826c1da43f69c198 data\tutorial-mod-re\worldgen\configured_feature\nether_ice_ether_ore.json
 a169e407134552803da40513301700b63d53dcfb data\tutorial-mod-re\worldgen\placed_feature\simple_flower_placed.json
+ac62f225457148ba53a8de90af65f6f35b24d888 data\tutorial-mod-re\worldgen\configured_feature\ice_ether_ore.json
+5c6a3ea4015b771a452739f3575b7a1709596a75 data\tutorial-mod-re\worldgen\placed_feature\ice_ether_ore_placed.json
+97c475e2814b470c1c3ad59256da1fb055ca42f5 data\tutorial-mod-re\worldgen\placed_feature\nether_ice_ether_ore_placed.json
 26f0713284a6e213442d216cdda2c8d97b79b175 data\tutorial-mod-re\worldgen\placed_feature\ice_ether_tree_placed.json
+e01251cbe5efac163d17281f8a4c2d9465d0a3c2 data\tutorial-mod-re\worldgen\configured_feature\end_ice_ether_ore.json
+1d69108c229aa46f3f14f0731930b19f98d99a26 data\tutorial-mod-re\worldgen\placed_feature\end_ice_ether_ore_placed.json
 aae401ef4c0cc6673b77f452f6e192c505077262 data\tutorial-mod-re\worldgen\configured_feature\simple_flower.json
 41899477e1f4eabfc1869773d06ee55ffd48dbce data\tutorial-mod-re\worldgen\configured_feature\ice_ether_tree.json
