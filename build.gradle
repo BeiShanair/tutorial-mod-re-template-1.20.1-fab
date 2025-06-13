@@ -26,6 +26,10 @@ repositories {
 		}
 	}
 	maven { url "https://maven.shedaniel.me" }
+	maven {
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/'
+	}
 }
 
 fabricApi {
@@ -48,6 +52,9 @@ dependencies {
 
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:12.1.780"
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:12.1.780"
+
+	modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:7.0.3"
+	include "com.terraformersmc.terraform-api:terraform-wood-api-v1:7.0.3"
 }
 
 processResources {

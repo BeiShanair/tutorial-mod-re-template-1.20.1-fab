@@ -4,6 +4,10 @@ import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.custom.*;
 import com.besson.tutorial.block.custom.ModPillarBlock;
 import com.besson.tutorial.sound.ModSoundEvents;
+import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
@@ -108,6 +112,22 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
     public static final Block ICE_ETHER_PLANKS = register("ice_ether_planks",
             new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
+
+    // 我们借助Terraform API来实现告示牌的注册
+    // 首先需要一些Identifier，这些是材质文件的路径
+    public static final Identifier ICE_ETHER_SIGN_TEXTURE = Identifier.of(TutorialModRe.MOD_ID, "entity/signs/ice_ether");
+    public static final Identifier ICE_ETHER_HANGING_SIGN_TEXTURE = Identifier.of(TutorialModRe.MOD_ID, "entity/signs/hanging/ice_ether");
+    public static final Identifier ICE_ETHER_HANGING_SING_GUI = Identifier.of(TutorialModRe.MOD_ID, "textures/gui/hanging_signs/ice_ether");
+
+    // 告示牌的物品是两个为一组，所以说这里要分开来注册
+    public static final Block ICE_ETHER_SIGN = Registry.register(Registries.BLOCK, Identifier.of(TutorialModRe.MOD_ID, "ice_ether_sign"),
+            new TerraformSignBlock(ICE_ETHER_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_SIGN)));
+    public static final Block ICE_ETHER_WALL_SIGN = Registry.register(Registries.BLOCK, Identifier.of(TutorialModRe.MOD_ID, "ice_ether_wall_sign"),
+            new TerraformWallSignBlock(ICE_ETHER_SIGN_TEXTURE, AbstractBlock.Settings.copy(Blocks.OAK_WALL_SIGN)));
+    public static final Block ICE_ETHER_HANGING_SIGN = Registry.register(Registries.BLOCK, Identifier.of(TutorialModRe.MOD_ID, "ice_ether_hanging_sign"),
+            new TerraformHangingSignBlock(ICE_ETHER_HANGING_SIGN_TEXTURE, ICE_ETHER_HANGING_SING_GUI, AbstractBlock.Settings.copy(Blocks.OAK_HANGING_SIGN)));
+    public static final Block ICE_ETHER_WALL_HANGING_SIGN = Registry.register(Registries.BLOCK, Identifier.of(TutorialModRe.MOD_ID, "ice_ether_wall_hanging_sign"),
+            new TerraformWallHangingSignBlock(ICE_ETHER_HANGING_SIGN_TEXTURE, ICE_ETHER_HANGING_SING_GUI, AbstractBlock.Settings.copy(Blocks.OAK_WALL_HANGING_SIGN)));
 
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层

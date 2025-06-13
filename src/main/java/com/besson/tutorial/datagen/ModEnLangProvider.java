@@ -77,6 +77,9 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_LEAVES, "Ice Ether Leaves");
         translationBuilder.add(ModBlocks.ICE_ETHER_PLANKS, "Ice Ether Planks");
 
+        translationBuilder.add(ModBlocks.ICE_ETHER_SIGN, "Ice Ether Sign");
+        translationBuilder.add(ModBlocks.ICE_ETHER_HANGING_SIGN, "Ice Ether Hanging Sign");
+
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");
 

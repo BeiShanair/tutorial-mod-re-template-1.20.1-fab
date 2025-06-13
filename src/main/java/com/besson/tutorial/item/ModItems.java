@@ -78,6 +78,11 @@ public class ModItems {
     public static final Item OIL_BUCKET = registerItems("oil_bucket", new BucketItem(
                     ModFluids.OIL, new Item.Settings().maxCount(1).recipeRemainder(Items.BUCKET)));
 
+    public static final Item ICE_ETHER_SIGN = registerItems("ice_ether_sign",
+            new SignItem(new Item.Settings().maxCount(16), ModBlocks.ICE_ETHER_SIGN, ModBlocks.ICE_ETHER_WALL_SIGN));
+    public static final Item ICE_ETHER_HANGING_SIGN = registerItems("ice_ether_hanging_sign",
+            new HangingSignItem(ModBlocks.ICE_ETHER_HANGING_SIGN, ModBlocks.ICE_ETHER_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
+
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
        以DIAMOND为例，我们可以看到其注册方法是这样的：（一共是三层，DIAMOND注册调用的是第一个方法）

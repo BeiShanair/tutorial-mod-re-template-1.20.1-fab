@@ -84,7 +84,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.ICE_ETHER_LOG).log(ModBlocks.ICE_ETHER_LOG).wood(ModBlocks.ICE_ETHER_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ICE_ETHER_LOG).log(ModBlocks.STRIPPED_ICE_ETHER_LOG).wood(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_PLANKS);
+//        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_LEAVES);
 
     }
@@ -180,5 +180,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.A_MOMENT_APART_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.OIL_BUCKET, Models.GENERATED);
+
+        // 悬挂告示牌不会自己生成模型，所以我们要手动生成
+        itemModelGenerator.register(ModItems.ICE_ETHER_HANGING_SIGN, Models.GENERATED);
     }
 }
