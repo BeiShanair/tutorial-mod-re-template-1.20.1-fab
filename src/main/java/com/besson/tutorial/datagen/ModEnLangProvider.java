@@ -6,6 +6,8 @@ import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 
+import java.awt.font.TransformAttribute;
+
 public class ModEnLangProvider extends FabricLanguageProvider {
 
     // 在创建完构造函数之后，我们可以在super方法中再加入一个参数，这个参数就是我们要翻译的语言
@@ -67,6 +69,13 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.PILLAR, "Pillar");
         translationBuilder.add(ModBlocks.FENCE, "Fence");
         translationBuilder.add(ModBlocks.SIMPLE_CABINET, "Simple Cabinet");
+
+        translationBuilder.add(ModBlocks.ICE_ETHER_LOG, "Ice Ether Log");
+        translationBuilder.add(ModBlocks.STRIPPED_ICE_ETHER_LOG, "Stripped Ice Ether Log");
+        translationBuilder.add(ModBlocks.ICE_ETHER_WOOD, "Ice Ether Wood");
+        translationBuilder.add(ModBlocks.STRIPPED_ICE_ETHER_WOOD, "Stripped Ice Ether Wood");
+        translationBuilder.add(ModBlocks.ICE_ETHER_LEAVES, "Ice Ether Leaves");
+        translationBuilder.add(ModBlocks.ICE_ETHER_PLANKS, "Ice Ether Planks");
 
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");

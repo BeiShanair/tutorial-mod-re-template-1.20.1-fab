@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorial-mod-re:ice_ether_log",
+    "tutorial-mod-re:ice_ether_wood",
+    "tutorial-mod-re:stripped_ice_ether_log",
+    "tutorial-mod-re:stripped_ice_ether_wood"
+  ]
+}

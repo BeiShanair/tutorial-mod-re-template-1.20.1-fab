@@ -9,11 +9,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.WorldAccess;
 
-public class PillarBlock extends Block {
+public class ModPillarBlock extends Block {
     // 定义一个枚举属性，用于表示柱子的类型
     public static final EnumProperty<Type> TYPE = EnumProperty.of("type2", Type.class);
 
-    public PillarBlock(Settings settings) {
+    public ModPillarBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.getStateManager().getDefaultState().with(TYPE, Type.SINGLE));
     }

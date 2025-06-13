@@ -76,6 +76,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.FENCE);
                         entries.add(ModBlocks.SIMPLE_CABINET);
                         entries.add(ModItems.OIL_BUCKET);
+
+                        entries.add(ModBlocks.ICE_ETHER_LOG);
+                        entries.add(ModBlocks.ICE_ETHER_WOOD);
+                        entries.add(ModBlocks.STRIPPED_ICE_ETHER_LOG);
+                        entries.add(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
+                        entries.add(ModBlocks.ICE_ETHER_PLANKS);
+                        entries.add(ModBlocks.ICE_ETHER_LEAVES);
                     }).build());
 
     // 初始化注册方法

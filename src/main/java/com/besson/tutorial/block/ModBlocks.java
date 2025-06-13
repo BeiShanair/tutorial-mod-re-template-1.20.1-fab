@@ -2,7 +2,7 @@ package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.custom.*;
-import com.besson.tutorial.block.custom.PillarBlock;
+import com.besson.tutorial.block.custom.ModPillarBlock;
 import com.besson.tutorial.sound.ModSoundEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -85,7 +85,7 @@ public class ModBlocks {
             new ModBedBlock(DyeColor.BLACK, AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
 
     public static final Block PILLAR = register("pillar",
-            new PillarBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
+            new ModPillarBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
 
     public static final Block FENCE = register("fence",
             new ModFenceBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
@@ -96,7 +96,18 @@ public class ModBlocks {
     public static final Block OIL = Registry.register(Registries.BLOCK, new Identifier(TutorialModRe.MOD_ID, "oil"),
             new FluidBlock(ModFluids.OIL, AbstractBlock.Settings.copy(Blocks.WATER)));
 
-
+    public static final Block ICE_ETHER_LOG = register("ice_ether_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
+    public static final Block ICE_ETHER_WOOD = register("ice_ether_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block STRIPPED_ICE_ETHER_LOG = register("stripped_ice_ether_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block STRIPPED_ICE_ETHER_WOOD = register("stripped_ice_ether_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final Block ICE_ETHER_LEAVES = register("ice_ether_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block ICE_ETHER_PLANKS = register("ice_ether_planks",
+            new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
 
     /* 同样的，我们也先去看看源代码的方块注册
        以STONE为例，方块的注册方法就只有一层

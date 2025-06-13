@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "tutorial-mod-re:block/stripped_ice_ether_log_top",
+    "side": "tutorial-mod-re:block/stripped_ice_ether_log"
+  }
+}

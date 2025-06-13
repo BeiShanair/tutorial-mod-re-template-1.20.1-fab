@@ -79,6 +79,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                                 .with(ItemEntry.builder(ModItems.CORN).apply(ApplyBonusLootFunction.binomialWithBonusCount(Enchantments.FORTUNE, 0.5714286F, 3)))
                                 )
                 ));
+        addDrop(ModBlocks.ICE_ETHER_LOG);
+        addDrop(ModBlocks.ICE_ETHER_WOOD);
+        addDrop(ModBlocks.STRIPPED_ICE_ETHER_LOG);
+        addDrop(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
+        addDrop(ModBlocks.ICE_ETHER_PLANKS);
+        addDrop(ModBlocks.ICE_ETHER_LEAVES, leavesDrops(ModBlocks.ICE_ETHER_LEAVES, Blocks.OAK_SAPLING, LEAVES_STICK_DROP_CHANCE));
     }
 
     /* 我们可以到原版的BlockLootTableGenerator中查看方块的战利品列表生成方法

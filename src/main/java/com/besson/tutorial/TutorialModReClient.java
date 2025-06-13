@@ -39,5 +39,7 @@ public class TutorialModReClient implements ClientModInitializer {
 				));
 		// 设置渲染层
 		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluids.OIL, ModFluids.FLOWING_OIL);
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ICE_ETHER_LEAVES, RenderLayer.getCutout());
 	}
 }
