@@ -4,6 +4,8 @@ import com.besson.tutorial.block.ModBlockEntities;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.block.ModFluids;
 import com.besson.tutorial.block.SeatRenderer;
+import com.besson.tutorial.entity.ModBoats;
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
@@ -41,5 +43,7 @@ public class TutorialModReClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluids.OIL, ModFluids.FLOWING_OIL);
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ICE_ETHER_LEAVES, RenderLayer.getCutout());
+
+		TerraformBoatClientHelper.registerModelLayers(ModBoats.ICE_ETHER_BOAT, false);
 	}
 }

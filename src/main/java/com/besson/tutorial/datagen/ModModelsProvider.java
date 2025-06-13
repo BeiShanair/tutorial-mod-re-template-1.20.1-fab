@@ -183,5 +183,8 @@ public class ModModelsProvider extends FabricModelProvider {
 
         // 悬挂告示牌不会自己生成模型，所以我们要手动生成
         itemModelGenerator.register(ModItems.ICE_ETHER_HANGING_SIGN, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.ICE_ETHER_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ICE_ETHER_CHEST_BOAT, Models.GENERATED);
     }
 }

@@ -3,9 +3,11 @@ package com.besson.tutorial.item;
 import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.block.ModFluids;
+import com.besson.tutorial.entity.ModBoats;
 import com.besson.tutorial.item.custom.ModArmorItem;
 import com.besson.tutorial.item.custom.PickaxeAxe;
 import com.besson.tutorial.sound.ModSoundEvents;
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -82,6 +84,11 @@ public class ModItems {
             new SignItem(new Item.Settings().maxCount(16), ModBlocks.ICE_ETHER_SIGN, ModBlocks.ICE_ETHER_WALL_SIGN));
     public static final Item ICE_ETHER_HANGING_SIGN = registerItems("ice_ether_hanging_sign",
             new HangingSignItem(ModBlocks.ICE_ETHER_HANGING_SIGN, ModBlocks.ICE_ETHER_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
+
+    public static final Item ICE_ETHER_BOAT = TerraformBoatItemHelper.registerBoatItem(
+            ModBoats.ICE_ETHER_BOAT, ModBoats.ICE_ETHER_BOAT_KEY, false);
+    public static final Item ICE_ETHER_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
+            ModBoats.ICE_ETHER_CHEST_BOAT, ModBoats.ICE_ETHER_BOAT_KEY, true);
 
     /*
        而采用原生的注册系统，我们不妨先去看看源代码
