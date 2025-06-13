@@ -1,5 +1,6 @@
-// 1.20.1	2025-06-13T16:57:12.1753142	Tutorial Mod Re/Recipes
+// 1.20.1	2025-06-13T21:02:55.1638448	Tutorial Mod Re/Recipes
 be3b08e5b204ef13e271d8170c30fcfcafcc7b0e data\tutorial-mod-re\advancements\recipes\food\ice_ether_from_campfire_cooking.json
+8860a0e93acf7b4eea365b61053aba19f5252fa3 data\tutorial-mod-re\advancements\recipes\misc\anthracite.json
 a3e8adc669ad51fdb454dc8f2871b9df2283b567 data\tutorial-mod-re\recipes\ice_ether_from_blasting_raw_ice_ether.json
 b22fb4aef9b94c6c0393a7b72ddbc53eb921eb55 data\tutorial-mod-re\recipes\ice_ether_ore.json
 96c349bd093c631aa4d8a3d41887b83585ff93ee data\tutorial-mod-re\advancements\recipes\misc\ice_ether.json
@@ -7,6 +8,7 @@ b22fb4aef9b94c6c0393a7b72ddbc53eb921eb55 data\tutorial-mod-re\recipes\ice_ether_
 0a9049cf83cc968832d729af8816c136288acbff data\tutorial-mod-re\advancements\recipes\misc\ice_ether_ore.json
 7d8549453fccf95fd06e71a8d97eec2722c00a26 data\tutorial-mod-re\recipes\raw_ice_ether.json
 2d2f8432779bc27717cdf91d8661c290073a9674 data\tutorial-mod-re\recipes\ice_ether.json
+6901895170cf90f4db581ffc8fc44be3e8a597cb data\tutorial-mod-re\recipes\anthracite.json
 d7d2e7732376fb07f5e03fdfb90b98b45fefd9bf data\tutorial-mod-re\recipes\ice_ether_from_campfire_cooking.json
 8954ef10f9baa983941c08f5a86cb9d8576ae492 data\tutorial-mod-re\advancements\recipes\misc\raw_ice_ether.json
 3ad781ac24d1fe652a1e64e0c8894b0e6b6f7c3b data\tutorial-mod-re\advancements\recipes\misc\ice_ether_from_smelting_raw_ice_ether.json

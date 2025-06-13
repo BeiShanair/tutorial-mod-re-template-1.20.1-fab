@@ -1,14 +1,14 @@
-// 1.20.1	2025-06-13T16:57:12.1743122	Tutorial Mod Re/Block Loot Tables
-c09d6612d595dc814eb4218aaba677baadb1673d data\tutorial-mod-re\loot_tables\blocks\ice_ether_door.json
+// 1.20.1	2025-06-13T21:02:55.1638448	Tutorial Mod Re/Block Loot Tables
 748433692d994ef59593cd83f932d54cded8d1cd data\tutorial-mod-re\loot_tables\blocks\ice_ether_gate.json
+c09d6612d595dc814eb4218aaba677baadb1673d data\tutorial-mod-re\loot_tables\blocks\ice_ether_door.json
 85defa9f86dcbae5e894de93b54ee501fdf50dfd data\tutorial-mod-re\loot_tables\blocks\ice_ether_log.json
 62cbf15a4009dc433b9a859389a41a8eb587d7b2 data\tutorial-mod-re\loot_tables\blocks\ice_ether_slab.json
 5244c91412eda61e47ff51c17b9e8104ff51a22d data\tutorial-mod-re\loot_tables\blocks\ice_ether_block.json
 2d2da1496ffcdfbe6840360e0629e928a11aeede data\tutorial-mod-re\loot_tables\blocks\ice_ether_wood.json
 7419da1778e57468b742b1419d661980684dc375 data\tutorial-mod-re\loot_tables\blocks\ice_ether_pressure_plate.json
 8cdba7d312fefda0119730fb09c580aa0a64737a data\tutorial-mod-re\loot_tables\blocks\ice_ether_trapdoor.json
-b03005c98d8a3a9ecff1056efeb116cb48c5259a data\tutorial-mod-re\loot_tables\blocks\stripped_ice_ether_log.json
 4f000e6732590b9fbd3e08efc375922b50ffa984 data\tutorial-mod-re\loot_tables\blocks\stripped_ice_ether_wood.json
+b03005c98d8a3a9ecff1056efeb116cb48c5259a data\tutorial-mod-re\loot_tables\blocks\stripped_ice_ether_log.json
 6fc09a5e4b43f88342e43ff715e9d01b3608f79b data\tutorial-mod-re\loot_tables\blocks\ice_ether_leaves.json
 2fa79450a744d8c4c1bfe1813f0d778c5dc5186f data\tutorial-mod-re\loot_tables\blocks\ice_ether_wall.json
 17cf35c9e356cabf611008a591171537c7c68308 data\tutorial-mod-re\loot_tables\blocks\ice_ether_stairs.json

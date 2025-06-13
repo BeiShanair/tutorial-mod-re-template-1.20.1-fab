@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"com.besson.tutorial.TutorialModReClient"
+		],
+		"terrablender": [
+			"com.besson.tutorial.world.biome.ModTerraBlenderAPI"
 		]
 	},
 	"mixins": [
