@@ -9,7 +9,6 @@ import com.besson.tutorial.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
@@ -86,6 +85,8 @@ public class ModModelsProvider extends FabricModelProvider {
 
 //        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ICE_ETHER_LEAVES);
+
+        blockStateModelGenerator.registerTintableCross(ModBlocks.ICE_ETHER_TREE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 
