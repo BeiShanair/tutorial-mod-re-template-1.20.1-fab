@@ -84,6 +84,8 @@ public class ModEnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.ICE_ETHER_TREE_SAPLING, "Ice Ether Sapling");
         translationBuilder.add(ModBlocks.SIMPLE_FLOWER, "Simple Flower");
 
+        translationBuilder.add(ModItems.TEST_GEO_BLOCK_ITEM, "Test Geo Block");
+
         translationBuilder.add(ModItemGroups.TUTORIAL_GROUP, "Tutorial Group");
         translationBuilder.add("itemGroup.tutorial_group2", "Tutorial Group2");
 

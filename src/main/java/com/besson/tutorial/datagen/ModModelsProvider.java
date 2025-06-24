@@ -78,6 +78,7 @@ public class ModModelsProvider extends FabricModelProvider {
                 .accept(createFenceBlockState(ModBlocks.FENCE, postModel, sideModel));
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.SIMPLE_CABINET);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.TEST_GEO_BLOCK);
 
         // 原木和木头的注册使用registerLog方法
         blockStateModelGenerator.registerLog(ModBlocks.ICE_ETHER_LOG).log(ModBlocks.ICE_ETHER_LOG).wood(ModBlocks.ICE_ETHER_WOOD);

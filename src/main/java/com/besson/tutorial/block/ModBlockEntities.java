@@ -2,6 +2,7 @@ package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialModRe;
 import com.besson.tutorial.block.custom.SimpleCabinetBE;
+import com.besson.tutorial.block.custom.TestGeoEntity;
 import com.mojang.datafixers.types.Type;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.block.entity.BlockEntity;
@@ -23,9 +24,12 @@ public class ModBlockEntities {
     public static final BlockEntityType<SimpleCabinetBE> SIMPLE_CABINET = create("simple_cabinet",
             BlockEntityType.Builder.create(SimpleCabinetBE::new, ModBlocks.SIMPLE_CABINET));
 
+    public static BlockEntityType<TestGeoEntity> TEST_GEO_ENTITY = create("test_geo_entity",
+            BlockEntityType.Builder.create(TestGeoEntity::new, ModBlocks.TEST_GEO_BLOCK));
+
     private static <T extends BlockEntity> BlockEntityType<T> create(String id, BlockEntityType.Builder<T> builder) {
         Type<?> type = Util.getChoiceType(TypeReferences.BLOCK_ENTITY, id);
-        return Registry.register(Registries.BLOCK_ENTITY_TYPE, new  Identifier(TutorialModRe.MOD_ID, id), builder.build(type));
+        return Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(TutorialModRe.MOD_ID, id), builder.build(type));
     }
 
     public static void registerModBlockEntities() {

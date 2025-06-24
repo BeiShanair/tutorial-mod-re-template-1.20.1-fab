@@ -4,6 +4,7 @@ import com.besson.tutorial.block.ModBlockEntities;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.block.ModFluids;
 import com.besson.tutorial.block.SeatRenderer;
+import com.besson.tutorial.block.custom.TestGeoBlockRenderer;
 import com.besson.tutorial.entity.ModBoats;
 import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.fabricmc.api.ClientModInitializer;
@@ -12,6 +13,7 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.util.Identifier;
 
 public class TutorialModReClient implements ClientModInitializer {
@@ -31,6 +33,8 @@ public class TutorialModReClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CORN_CROP, RenderLayer.getCutout());
 
 		EntityRendererRegistry.register(ModBlockEntities.SEAT, SeatRenderer::new);
+
+		BlockEntityRendererFactories.register(ModBlockEntities.TEST_GEO_ENTITY, TestGeoBlockRenderer::new);
 
 		// 为流体设置颜色
 		FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.OIL, ModFluids.FLOWING_OIL,

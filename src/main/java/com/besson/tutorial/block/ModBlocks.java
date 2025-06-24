@@ -115,6 +115,9 @@ public class ModBlocks {
     public static final Block ICE_ETHER_PLANKS = register("ice_ether_planks",
             new Block(AbstractBlock.Settings.create().strength(0.2f,0.2f)));
 
+    public static final Block TEST_GEO_BLOCK = Registry.register(Registries.BLOCK, Identifier.of(TutorialModRe.MOD_ID, "test_geo_block"),
+            new TestGeoBlock(AbstractBlock.Settings.create().strength(0.2f,0.2f).nonOpaque()));
+
     // 我们借助Terraform API来实现告示牌的注册
     // 首先需要一些Identifier，这些是材质文件的路径
     public static final Identifier ICE_ETHER_SIGN_TEXTURE = Identifier.of(TutorialModRe.MOD_ID, "entity/signs/ice_ether");

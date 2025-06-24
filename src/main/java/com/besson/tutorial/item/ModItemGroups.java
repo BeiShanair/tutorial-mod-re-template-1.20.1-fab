@@ -93,6 +93,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ICE_ETHER_TREE_SAPLING);
 
                         entries.add(ModBlocks.SIMPLE_FLOWER);
+
+                        entries.add(ModItems.TEST_GEO_BLOCK_ITEM);
                     }).build());
 
     // 初始化注册方法
